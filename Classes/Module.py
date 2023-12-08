@@ -3,5 +3,6 @@ class Module:
         self.id_module = id_module
         self.designation = designation
         self.responsable = responsable
-        self.nbr_heure = nbr_heure
+        self.nombre_heure = nombre_heure
         self.semestre = semestre
+        self.matiere = []
