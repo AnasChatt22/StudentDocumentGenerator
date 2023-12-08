@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="commit test">
-      <change afterPath="$PROJECT_DIR$/Images/Abdelmalek-Essaadi-University_logo_.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Etudiant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Etudiant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Matiere.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Matiere.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Note.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Note.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Etudiants.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Fichiers Excel/Etudiants.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Notes.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Fichiers Excel/Notes.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "oussama",
+    "git-widget-placeholder": "anas",
     "last_opened_file_path": "C:/Users/pc/PycharmProjects/XMLProjet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
