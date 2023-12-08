@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="commit test">
+      <change afterPath="$PROJECT_DIR$/Images/Abdelmalek-Essaadi-University_logo_.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Etudiant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Etudiant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Matiere.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Matiere.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Module.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,17 +26,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AnasChatt22"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AnasChatt22&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="recentNewPullRequestHead">
       <RepoCoordinatesHolder>
@@ -68,7 +72,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "oussama",
+    "last_opened_file_path": "C:/Users/pc/PycharmProjects/XMLProjet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +82,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\Images" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -94,6 +104,8 @@
       <updated>1702040746989</updated>
       <workItem from="1702040757184" duration="699000" />
       <workItem from="1702041786984" duration="1203000" />
+      <workItem from="1702062079049" duration="271000" />
+      <workItem from="1702063160890" duration="3968000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
