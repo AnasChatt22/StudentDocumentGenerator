@@ -22,8 +22,9 @@ Ce projet a été créé dans le cadre de la gestion des étudiants de la classe
 
 Le projet utilise trois fichiers Excel pour stocker les informations sur les étudiants, les notes des modules et la liste des modules. Ces fichiers sont :
 - `etudiants.xlsx` : Informations sur les étudiants (code, nom, prénom, sexe).
-- `notes_modules.xlsx` : Notes de toutes les matières pour chaque module et étudiant.
+- `notes.xlsx` : Notes de toutes les matières pour chaque module et étudiant.
 - `modules.xlsx` : Liste des modules avec leurs matières associées.
+- `Emplois.xlsx` : L'emploi du temps.
 
 ## Fichiers XML
 
