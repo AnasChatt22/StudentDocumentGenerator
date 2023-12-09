@@ -1,6 +1,13 @@
+import Matiere
 class Module:
-    def __init__(self, ID_module, designation, responsable, nbr_heure):
-        self.ID_module = ID_module
+    def __init__(self, id_module, designation, responsable, semestre):
+        self.id_module = id_module
         self.designation = designation
         self.responsable = responsable
-        self.nbr_heure = nbr_heure
+        self.semestre = semestre
+        self.matieres = []
+
+    def __str__(self):
+        return str(self.__dict__)
+
+

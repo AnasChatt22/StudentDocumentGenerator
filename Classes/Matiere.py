@@ -1,5 +1,7 @@
 class Matiere:
-    def __init__(self, ID_matiere, designation, nbr_heure):
-        self.ID_matiere = ID_matiere
+    def __init__(self, id_matiere, designation):
+        self.id_matiere = id_matiere
         self.designation = designation
-        self.nbr_heure = nbr_heure
+
+    def __str__(self):
+        return str(self.__dict__)
