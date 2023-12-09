@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="commit test">
+    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="some changes">
+      <change afterPath="$PROJECT_DIR$/Classes/CreateXML.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Etudiant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Etudiant.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Matiere.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Matiere.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Note.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Note.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fichiers Excel/Etudiants.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Fichiers Excel/Etudiants.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Modules.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Fichiers Excel/Modules.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fichiers Excel/Notes.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Fichiers Excel/Notes.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +74,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.CreateXML.executor": "Run",
+    "Python.CreateXML2.executor": "Run",
+    "Python.Module.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "anas",
@@ -80,6 +86,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -107,6 +114,7 @@
       <workItem from="1702041786984" duration="1203000" />
       <workItem from="1702062079049" duration="271000" />
       <workItem from="1702063160890" duration="3968000" />
+      <workItem from="1702117388808" duration="16196000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -116,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702042351400</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some changes">
+      <option name="closed" value="true" />
+      <created>1702069362527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702069362527</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +164,23 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first push" />
     <MESSAGE value="commit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit test" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML.coverage" NAME="CreateXML Coverage Results" MODIFIED="1702135423840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$Module.coverage" NAME="Module Coverage Results" MODIFIED="1702129187574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML2.coverage" NAME="CreateXML2 Coverage Results" MODIFIED="1702121071361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
   </component>
 </project>

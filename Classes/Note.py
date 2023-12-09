@@ -3,3 +3,6 @@ class Note:
         self.etudiant = etudiant
         self.matiere = matiere
         self.note = note
+
+    def __str__(self):
+        return f'{self}'
