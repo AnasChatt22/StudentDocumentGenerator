@@ -11,8 +11,6 @@ Ce projet a pour objectif de gérer les étudiants de la classe GINF2, leurs not
 - [Génération de PDF avec XSL-FO](#génération-de-pdf-avec-xsl-fo)
 - [Requêtes XQuery](#requêtes-xquery)
 - [Application Desktop avec Tkinter](#application-desktop-avec-tkinter)
-- [Comment Contribuer](#comment-contribuer)
-- [Licence](#licence)
 
 ## Introduction
 
