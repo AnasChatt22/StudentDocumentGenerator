@@ -58,31 +58,31 @@ class CreateXML:
                     note = Note(etudiant, matiere, note_value)
                     self.notes.append(note)
 
-    def build_xml(self):
-        xml_doc = ET.Element("etudiants")
+    def Creer_xml(self):
+        xml_doc = ET.Element("Etudiants")
 
         for etudiant in self.etudiants:
-            etudiant_element = ET.SubElement(xml_doc, "etudiant", id_etudiant=str(etudiant.id_etudiant),
+            etudiant_element = ET.SubElement(xml_doc, "Etudiant", id_etudiant=str(etudiant.id_etudiant),
                                              sexe=str(etudiant.sexe),
                                              date_naissance=str(etudiant.date_naissance))
 
-            ET.SubElement(etudiant_element, "nom").text = etudiant.nom
-            ET.SubElement(etudiant_element, "prenom").text = etudiant.prenom
-            ET.SubElement(etudiant_element, "email").text = etudiant.email
+            ET.SubElement(etudiant_element, "Nom").text = etudiant.nom
+            ET.SubElement(etudiant_element, "Prenom").text = etudiant.prenom
+            ET.SubElement(etudiant_element, "Email").text = etudiant.email
 
             for module in self.modules:
-                module_element = ET.SubElement(etudiant_element, "module", id_module=str(module.id_module))
-                ET.SubElement(module_element, "designation").text = module.designation
-                ET.SubElement(module_element, "responsable").text = module.responsable
-                ET.SubElement(module_element, "semestre").text = str(module.semestre)
+                module_element = ET.SubElement(etudiant_element, "Module", id_module=str(module.id_module))
+                ET.SubElement(module_element, "Designation").text = module.designation
+                ET.SubElement(module_element, "Responsable").text = module.responsable
+                ET.SubElement(module_element, "Semestre").text = str(module.semestre)
 
                 for matiere in module.matieres:
-                    matiere_element = ET.SubElement(module_element, "matiere", id_matiere=str(matiere.id_matiere))
-                    ET.SubElement(matiere_element, "designation").text = matiere.designation
+                    matiere_element = ET.SubElement(module_element, "Matiere", id_matiere=str(matiere.id_matiere))
+                    ET.SubElement(matiere_element, "Designation").text = matiere.designation
 
                     for note in self.notes:
                         if note.etudiant.id_etudiant == etudiant.id_etudiant and note.matiere.id_matiere == matiere.id_matiere:
-                            ET.SubElement(matiere_element, "note").text = str(note.note)
+                            ET.SubElement(matiere_element, "Note").text = str(note.note)
 
         xml_string = ET.tostring(xml_doc, encoding="UTF-8")
         dom = xml.dom.minidom.parseString(xml_string)
@@ -104,4 +104,4 @@ if __name__ == "__main__":
     xml_file.ajout_etudiants()
     xml_file.ajout_modules()
     xml_file.ajout_notes()
-    xml_file.build_xml()
+    xml_file.Creer_xml()
