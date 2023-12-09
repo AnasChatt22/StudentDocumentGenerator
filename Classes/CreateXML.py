@@ -5,6 +5,8 @@ from Classes.Etudiant import Etudiant
 from Classes.Matiere import Matiere
 from Classes.Module import Module
 from Classes.Note import Note
+from datetime import datetime
+
 
 
 class CreateXML:
@@ -20,8 +22,10 @@ class CreateXML:
     def ajout_etudiants(self):
         read_xl = pd.read_excel(self.etudiants_xl_path)
         for _, row in read_xl.iterrows():
+            date_naissance = pd.to_datetime(row['date_naissance'])
+
             etudiant = Etudiant(row['id_etudiant'], row['nom'], row['prenom'], row['email'], row['sexe'],
-                                row['date_naissance'])
+                                date_naissance)
             self.etudiants.append(etudiant)
 
     def ajout_modules(self):
@@ -62,9 +66,9 @@ class CreateXML:
         xml_doc = ET.Element("Etudiants")
 
         for etudiant in self.etudiants:
-            etudiant_element = ET.SubElement(xml_doc, "Etudiant", id_etudiant=str(etudiant.id_etudiant),
+            etudiant_element = ET.SubElement(xml_doc, "Etudiant", idetudiant=str(etudiant.id_etudiant),
                                              sexe=str(etudiant.sexe),
-                                             date_naissance=str(etudiant.date_naissance))
+                                             date_naissance=str(etudiant.date_naissance.strftime("%Y-%m-%d")))
 
             ET.SubElement(etudiant_element, "Nom").text = etudiant.nom
             ET.SubElement(etudiant_element, "Prenom").text = etudiant.prenom
