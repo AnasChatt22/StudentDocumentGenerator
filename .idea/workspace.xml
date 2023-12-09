@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="commit test">
-      <change beforePath="$PROJECT_DIR$/Classes/Etudiant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Etudiant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Matiere.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Matiere.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Note.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Note.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Etudiants.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Fichiers Excel/Etudiants.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Notes.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Fichiers Excel/Notes.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Classes/validateXML.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FichiersXML/DTD/GINF2.dtd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FichiersXML/XML/d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FichiersXML/XSD/GINF2.xsd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Emplois.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Emplois.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Etudiants.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Etudiants.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Modules.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Modules.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fichiers Excel/Notes.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Notes.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="oussama" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,9 +76,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.validateXML.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "anas",
+    "git-widget-placeholder": "validations",
     "last_opened_file_path": "C:/Users/pc/PycharmProjects/XMLProjet",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,8 +91,34 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\FichiersXML\XML" />
       <recent name="C:\Users\pc\PycharmProjects\XMLProjet\Images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="validateXML" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="XMLProjet" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classes/validateXML.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -107,6 +139,7 @@
       <workItem from="1702041786984" duration="1203000" />
       <workItem from="1702062079049" duration="271000" />
       <workItem from="1702063160890" duration="3968000" />
+      <workItem from="1702123397979" duration="9133000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
