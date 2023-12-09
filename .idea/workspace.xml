@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="added class CreateXML.py">
+    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="added dtd,xsd and validation functions (By Oussama)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/CreateXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/CreateXML.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersExcel/Emplois.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Emplois.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersExcel/Modules.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Modules.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +73,7 @@
     &quot;Python.CreateXML.executor&quot;: &quot;Run&quot;,
     &quot;Python.CreateXML2.executor&quot;: &quot;Run&quot;,
     &quot;Python.Module.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ValidateXML.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;anas&quot;,
@@ -108,7 +112,8 @@
       <workItem from="1702062079049" duration="271000" />
       <workItem from="1702063160890" duration="3968000" />
       <workItem from="1702117388808" duration="17225000" />
-      <workItem from="1702138274780" duration="621000" />
+      <workItem from="1702138274780" duration="3480000" />
+      <workItem from="1702149960377" duration="7031000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -142,7 +147,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702136142447</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="correct datetime">
+      <option name="closed" value="true" />
+      <created>1702139111880</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702139111880</updated>
+    </task>
+    <task id="LOCAL-00006" summary="correct datetime">
+      <option name="closed" value="true" />
+      <created>1702141118804</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702141118804</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added dtd,xsd and validation functions (By Oussama)">
+      <option name="closed" value="true" />
+      <created>1702141681336</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702141681336</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +205,9 @@
     <MESSAGE value="commit test" />
     <MESSAGE value="some changes" />
     <MESSAGE value="added class CreateXML.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added class CreateXML.py" />
+    <MESSAGE value="correct datetime" />
+    <MESSAGE value="added dtd,xsd and validation functions (By Oussama)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added dtd,xsd and validation functions (By Oussama)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,7 +221,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML.coverage" NAME="CreateXML Coverage Results" MODIFIED="1702138890690" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$ValidateXML.coverage" NAME="ValidateXML Coverage Results" MODIFIED="1702140659075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML.coverage" NAME="CreateXML Coverage Results" MODIFIED="1702156995382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
     <SUITE FILE_PATH="coverage/XMLProjet$Module.coverage" NAME="Module Coverage Results" MODIFIED="1702129187574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
     <SUITE FILE_PATH="coverage/XMLProjet$CreateXML2.coverage" NAME="CreateXML2 Coverage Results" MODIFIED="1702121071361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
   </component>

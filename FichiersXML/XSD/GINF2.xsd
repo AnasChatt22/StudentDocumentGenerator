@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+   <xs:element name='Etudiants'>
+       <xs:complexType>
+           <xs:sequence>
+               <xs:element name="Etudiant" minOccurs="1" maxOccurs="unbounded">
+                   <xs:complexType>
+                       <xs:sequence>
+                           <xs:element name="Nom" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+                           <xs:element name="Prenom" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+                           <xs:element name="Email" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+                           <xs:element name="Module"  maxOccurs="unbounded" minOccurs="1">
+                               <xs:complexType>
+                                   <xs:sequence>
+                                       <xs:element name="Designation" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+                                       <xs:element name="Responsable" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+                                       <xs:element name="Semestre" type="xs:positiveInteger" maxOccurs="1" minOccurs="1"></xs:element>
+                                       <xs:element name="Matiere"  maxOccurs="unbounded" minOccurs="1">
+                                           <xs:complexType>
+                                               <xs:sequence>
+                                                   <xs:element name="Designation" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+                                                   <xs:element name="Note" type="xs:double"  maxOccurs="1" minOccurs="1"></xs:element>
+                                               </xs:sequence>
+                                               <xs:attribute name="id_matiere" type="xs:string" ></xs:attribute>
+                                           </xs:complexType>
+                                       </xs:element>
+                                   </xs:sequence>
+                                   <xs:attribute name="id_module" type="xs:string" ></xs:attribute>
+                               </xs:complexType>
+                           </xs:element>
+                       </xs:sequence>
+                       <xs:attribute name="id_etudiant" type="xs:positiveInteger" ></xs:attribute>
+                       <xs:attribute name="sexe" >
+                           <xs:simpleType>
+                               <xs:restriction base="xs:string">
+                                   <xs:enumeration value="H"/>
+                                   <xs:enumeration value="F"/>
+                               </xs:restriction>
+                           </xs:simpleType>
+                       </xs:attribute>
+                       <xs:attribute name="date_naissance" type="xs:date"></xs:attribute>
+                   </xs:complexType>
+               </xs:element>
+           </xs:sequence>
+       </xs:complexType>
+   </xs:element>
+</xs:schema>
