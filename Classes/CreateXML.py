@@ -98,6 +98,7 @@ class CreateXML:
 
 
 if __name__ == "__main__":
+    #change path when executing !!
     etudiant_xl_path = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\Fichiers Excel\\Etudiants.xlsx"
     modules_xl_path = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\Fichiers Excel\\Modules.xlsx"
     notes_xl_path = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\Fichiers Excel\\Notes.xlsx"
