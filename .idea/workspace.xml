@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="added Emploi.xml and creation function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="testing">
       <change beforePath="$PROJECT_DIR$/Classes/CreateXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/CreateXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Etudiant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Etudiant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersExcel/Etudiants.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Etudiants.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XML/Emploi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +110,7 @@
       <workItem from="1702117388808" duration="17225000" />
       <workItem from="1702138274780" duration="3480000" />
       <workItem from="1702149960377" duration="7469000" />
-      <workItem from="1702200314523" duration="3291000" />
+      <workItem from="1702200314523" duration="3661000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -181,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702157267842</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="testing">
+      <option name="closed" value="true" />
+      <created>1702203783209</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702203783209</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +231,8 @@
     <MESSAGE value="correct datetime" />
     <MESSAGE value="added dtd,xsd and validation functions (By Oussama)" />
     <MESSAGE value="added Emploi.xml and creation function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Emploi.xml and creation function" />
+    <MESSAGE value="testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

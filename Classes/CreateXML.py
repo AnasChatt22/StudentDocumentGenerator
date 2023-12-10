@@ -83,7 +83,7 @@ class CreateXML:
 
                 for module in self.modules:
                     module_element = ET.SubElement(etudiant_element, "Module", id_module=str(module.id_module))
-                    ET.SubElement(module_element, "Désignation").text = module.designation
+                    ET.SubElement(module_element, "Designation").text = module.designation
                     ET.SubElement(module_element, "Responsable").text = module.responsable
                     ET.SubElement(module_element, "Semestre").text = str(module.semestre)
 
@@ -189,7 +189,7 @@ if __name__ == "__main__":
         xml_file.Creer_xml_GINF2()
         xml_file.Creer_xml_Emploi()
 
-        ValidateXML.validate_with_dtd(xml_path_GINF2, dtd_path_GINF2)
-        ValidateXML.validate_with_xsd(xml_path_GINF2, xsd_path_GINF2)
+        print(ValidateXML.validate_with_dtd(xml_path_GINF2, dtd_path_GINF2))
+        print(ValidateXML.validate_with_xsd(xml_path_GINF2, xsd_path_GINF2))
     except Exception as e:
         print(f"Il y a une erreur: {e}")
