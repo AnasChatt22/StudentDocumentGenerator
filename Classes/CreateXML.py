@@ -189,7 +189,7 @@ if __name__ == "__main__":
         xml_file.Creer_xml_GINF2()
         xml_file.Creer_xml_Emploi()
 
-        ValidateXML.validate_with_dtd(xml_path_GINF2, dtd_path_GINF2)
-        ValidateXML.validate_with_xsd(xml_path_GINF2, xsd_path_GINF2)
+        print(ValidateXML.validate_with_dtd(xml_path_GINF2, dtd_path_GINF2))
+        print(ValidateXML.validate_with_xsd(xml_path_GINF2, xsd_path_GINF2))
     except Exception as e:
         print(f"Il y a une erreur: {e}")
