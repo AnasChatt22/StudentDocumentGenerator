@@ -2,8 +2,8 @@ from enum import Enum
 
 
 class SEXE(Enum):
-    HOMME = "H"
-    FEMME = "F"
+    HOMME = "Homme"
+    FEMME = "Femme"
 
 
 class Etudiant:
