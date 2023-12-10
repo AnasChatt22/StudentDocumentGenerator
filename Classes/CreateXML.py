@@ -1,10 +1,10 @@
 import pandas as pd
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
-from Classes.Etudiant import Etudiant
-from Classes.Matiere import Matiere
-from Classes.Module import Module
-from Classes.Note import Note
+from Etudiant import Etudiant
+from Matiere import Matiere
+from Module import Module
+from Note import Note
 import ValidateXML
 
 
