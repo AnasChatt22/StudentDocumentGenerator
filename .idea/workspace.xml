@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="testing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/CreateXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/CreateXML.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/XSD/GINF2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XSD/GINF2.xsd" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +113,7 @@
       <workItem from="1702117388808" duration="17225000" />
       <workItem from="1702138274780" duration="3480000" />
       <workItem from="1702149960377" duration="7469000" />
-      <workItem from="1702200314523" duration="3661000" />
+      <workItem from="1702200314523" duration="4452000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -184,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702203783209</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="testing">
+      <option name="closed" value="true" />
+      <created>1702204289737</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702204289737</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +258,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/XMLProjet$ValidateXML.coverage" NAME="ValidateXML Coverage Results" MODIFIED="1702203412210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
-    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML.coverage" NAME="CreateXML Coverage Results" MODIFIED="1702203610254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML.coverage" NAME="CreateXML Coverage Results" MODIFIED="1702204773296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
     <SUITE FILE_PATH="coverage/XMLProjet$Module.coverage" NAME="Module Coverage Results" MODIFIED="1702129187574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
     <SUITE FILE_PATH="coverage/XMLProjet$CreateXML2.coverage" NAME="CreateXML2 Coverage Results" MODIFIED="1702121071361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
   </component>

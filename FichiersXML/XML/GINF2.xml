@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <Etudiants>
-    <Etudiant idetudiant="20000773" sexe="Homme" date_naissance="2002-01-23">
+    <Etudiant id_etudiant="20000773" sexe="Homme" date_naissance="2002-01-23">
         <Nom>ABETIOU</Nom>
         <Prenom>SOFIANE</Prenom>
         <Email>sofiane.abetiou@etu.uae.ac.ma</Email>
@@ -189,7 +189,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19001211" sexe="Homme" date_naissance="2002-04-05">
+    <Etudiant id_etudiant="19001211" sexe="Homme" date_naissance="2002-04-05">
         <Nom>ACHERNAN</Nom>
         <Prenom>MOHAMED</Prenom>
         <Email>mohamed.achernan@etu.uae.ac.ma</Email>
@@ -378,7 +378,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19001137" sexe="Femme" date_naissance="2002-10-18">
+    <Etudiant id_etudiant="19001137" sexe="Femme" date_naissance="2002-10-18">
         <Nom>AFOUD</Nom>
         <Prenom>HIND</Prenom>
         <Email>hind.afoud@etu.uae.ac.ma</Email>
@@ -567,7 +567,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000734" sexe="Femme" date_naissance="2003-04-05">
+    <Etudiant id_etudiant="20000734" sexe="Femme" date_naissance="2003-04-05">
         <Nom>AIT OUKHADI</Nom>
         <Prenom>SELMA</Prenom>
         <Email>selma.aitoukhadi@etu.uae.ac.ma</Email>
@@ -756,7 +756,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000761" sexe="Femme" date_naissance="2003-04-19">
+    <Etudiant id_etudiant="20000761" sexe="Femme" date_naissance="2003-04-19">
         <Nom>AKIIRNE</Nom>
         <Prenom>AMAL</Prenom>
         <Email>amal.akiirne@etu.uae.ac.ma</Email>
@@ -945,7 +945,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19001276" sexe="Femme" date_naissance="2003-03-14">
+    <Etudiant id_etudiant="19001276" sexe="Femme" date_naissance="2003-03-14">
         <Nom>AMHAOUECH</Nom>
         <Prenom>WIAM</Prenom>
         <Email>wiam.amhaouech@etu.uae.ac.ma</Email>
@@ -1134,7 +1134,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20001244" sexe="Homme" date_naissance="2003-09-20">
+    <Etudiant id_etudiant="20001244" sexe="Homme" date_naissance="2003-09-20">
         <Nom>AMINE</Nom>
         <Prenom>TAHA</Prenom>
         <Email>taha.amine@etu.uae.ac.ma</Email>
@@ -1323,7 +1323,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000493" sexe="Femme" date_naissance="2003-10-02">
+    <Etudiant id_etudiant="20000493" sexe="Femme" date_naissance="2003-10-02">
         <Nom>ARRAB</Nom>
         <Prenom>HAFSA</Prenom>
         <Email>hafsa.arrab@etu.uae.ac.ma</Email>
@@ -1512,7 +1512,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20006988" sexe="Homme" date_naissance="2001-08-24">
+    <Etudiant id_etudiant="20006988" sexe="Homme" date_naissance="2001-08-24">
         <Nom>BAJJI</Nom>
         <Prenom>AMINE</Prenom>
         <Email>amine.bajji@etu.uae.ac.ma</Email>
@@ -1701,7 +1701,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20007078" sexe="Homme" date_naissance="2002-07-11">
+    <Etudiant id_etudiant="20007078" sexe="Homme" date_naissance="2002-07-11">
         <Nom>BENAMRI</Nom>
         <Prenom>AYMANE</Prenom>
         <Email>aymane.benamri@etu.uae.ac.ma</Email>
@@ -1890,7 +1890,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000758" sexe="Femme" date_naissance="2003-04-15">
+    <Etudiant id_etudiant="20000758" sexe="Femme" date_naissance="2003-04-15">
         <Nom>BENATTOU</Nom>
         <Prenom>IHSANE</Prenom>
         <Email>ihssane.benattou@etu.uae.ac.ma</Email>
@@ -2079,7 +2079,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000757" sexe="Femme" date_naissance="2000-03-16">
+    <Etudiant id_etudiant="20000757" sexe="Femme" date_naissance="2000-03-16">
         <Nom>BENATTOU</Nom>
         <Prenom>IMANE</Prenom>
         <Email>imane.benattou@etu.uae.ac.ma</Email>
@@ -2268,7 +2268,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19002165" sexe="Homme" date_naissance="2002-07-31">
+    <Etudiant id_etudiant="19002165" sexe="Homme" date_naissance="2002-07-31">
         <Nom>BENTOUFILE</Nom>
         <Prenom>OUSSAMA</Prenom>
         <Email>oussama.bentoufile@etu.uae.ac.ma</Email>
@@ -2457,7 +2457,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000730" sexe="Femme" date_naissance="2002-08-07">
+    <Etudiant id_etudiant="20000730" sexe="Femme" date_naissance="2002-08-07">
         <Nom>BOUALI</Nom>
         <Prenom>MAROUA</Prenom>
         <Email>maroua.bouali@etu.uae.ac.ma</Email>
@@ -2646,7 +2646,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002424" sexe="Homme" date_naissance="2000-04-04">
+    <Etudiant id_etudiant="20002424" sexe="Homme" date_naissance="2000-04-04">
         <Nom>BOUKTAIB</Nom>
         <Prenom>SOUFIAN</Prenom>
         <Email>soufian.bouktaib@etu.uae.ac.ma</Email>
@@ -2835,7 +2835,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000771" sexe="Femme" date_naissance="2000-06-24">
+    <Etudiant id_etudiant="20000771" sexe="Femme" date_naissance="2000-06-24">
         <Nom>BOULAID</Nom>
         <Prenom>SARA</Prenom>
         <Email>sara.boulaid@etu.uae.ac.ma</Email>
@@ -3024,7 +3024,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20007025" sexe="Homme" date_naissance="2002-01-31">
+    <Etudiant id_etudiant="20007025" sexe="Homme" date_naissance="2002-01-31">
         <Nom>CHANAA</Nom>
         <Prenom>AIMANE</Prenom>
         <Email>aimane.chanaa@etu.uae.ac.ma</Email>
@@ -3213,7 +3213,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20007161" sexe="Homme" date_naissance="2000-02-16">
+    <Etudiant id_etudiant="20007161" sexe="Homme" date_naissance="2000-02-16">
         <Nom>CHATT</Nom>
         <Prenom>ANAS</Prenom>
         <Email>anas.chatt1@etu.uae.ac.ma</Email>
@@ -3402,7 +3402,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20004313" sexe="Femme" date_naissance="2002-03-27">
+    <Etudiant id_etudiant="20004313" sexe="Femme" date_naissance="2002-03-27">
         <Nom>DAHRABOU</Nom>
         <Prenom>DOHA</Prenom>
         <Email>doha.dahrabou@etu.uae.ac.ma</Email>
@@ -3591,7 +3591,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20007051" sexe="Femme" date_naissance="2003-08-27">
+    <Etudiant id_etudiant="20007051" sexe="Femme" date_naissance="2003-08-27">
         <Nom>DAOUDI</Nom>
         <Prenom>AYA</Prenom>
         <Email>aya.daoudi@etu.uae.ac.ma</Email>
@@ -3780,7 +3780,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002432" sexe="Homme" date_naissance="2002-10-13">
+    <Etudiant id_etudiant="20002432" sexe="Homme" date_naissance="2002-10-13">
         <Nom>ECHBERAAL</Nom>
         <Prenom>ANASS</Prenom>
         <Email>anass.echberaal@etu.uae.ac.ma</Email>
@@ -3969,7 +3969,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002251" sexe="Homme" date_naissance="2003-05-27">
+    <Etudiant id_etudiant="20002251" sexe="Homme" date_naissance="2003-05-27">
         <Nom>EL AALOUCH</Nom>
         <Prenom>MOHAMMED </Prenom>
         <Email>mohammed.elAalouch@etu.uae.ac.ma</Email>
@@ -4158,7 +4158,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002670" sexe="Femme" date_naissance="2003-10-28">
+    <Etudiant id_etudiant="20002670" sexe="Femme" date_naissance="2003-10-28">
         <Nom>EL ASSIRI</Nom>
         <Prenom>AHLAM</Prenom>
         <Email>ahlam.elAssiri@etu.uae.ac.ma</Email>
@@ -4347,7 +4347,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000742" sexe="Femme" date_naissance="2002-07-28">
+    <Etudiant id_etudiant="20000742" sexe="Femme" date_naissance="2002-07-28">
         <Nom>EL AZOUAN</Nom>
         <Prenom>AYA</Prenom>
         <Email>aya.elAzouan@etu.uae.ac.ma</Email>
@@ -4536,7 +4536,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000741" sexe="Femme" date_naissance="2002-09-11">
+    <Etudiant id_etudiant="20000741" sexe="Femme" date_naissance="2002-09-11">
         <Nom>EL BAGHDADI</Nom>
         <Prenom>NADA</Prenom>
         <Email>nada.elBaghdadi@etu.uae.ac.ma</Email>
@@ -4725,7 +4725,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000775" sexe="Femme" date_naissance="2002-11-06">
+    <Etudiant id_etudiant="20000775" sexe="Femme" date_naissance="2002-11-06">
         <Nom>EL BARAKA</Nom>
         <Prenom>NOUHAILA</Prenom>
         <Email>nouhaila.elBaraka@etu.uae.ac.ma</Email>
@@ -4914,7 +4914,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20007042" sexe="Femme" date_naissance="2002-04-04">
+    <Etudiant id_etudiant="20007042" sexe="Femme" date_naissance="2002-04-04">
         <Nom>EL FERCHOUNI</Nom>
         <Prenom>SOUKAYNA</Prenom>
         <Email>soukayna.elFerchouni@etu.uae.ac.ma</Email>
@@ -5103,7 +5103,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19001439" sexe="Femme" date_naissance="2000-08-30">
+    <Etudiant id_etudiant="19001439" sexe="Femme" date_naissance="2000-08-30">
         <Nom>EL FICH</Nom>
         <Prenom>RIHAB</Prenom>
         <Email>rihab.elFich@etu.uae.ac.ma</Email>
@@ -5292,7 +5292,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000780" sexe="Femme" date_naissance="2003-09-19">
+    <Etudiant id_etudiant="20000780" sexe="Femme" date_naissance="2003-09-19">
         <Nom>EL HABTI</Nom>
         <Prenom>NAJOUA</Prenom>
         <Email>najoua.elHabti@etu.uae.ac.ma</Email>
@@ -5481,7 +5481,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20003925" sexe="Homme" date_naissance="2001-09-20">
+    <Etudiant id_etudiant="20003925" sexe="Homme" date_naissance="2001-09-20">
         <Nom>EL HADDAD</Nom>
         <Prenom>MOHAMED</Prenom>
         <Email>mohamed.elHaddad@etu.uae.ac.ma</Email>
@@ -5670,7 +5670,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19006658" sexe="Femme" date_naissance="2003-12-17">
+    <Etudiant id_etudiant="19006658" sexe="Femme" date_naissance="2003-12-17">
         <Nom>EL HARIRI</Nom>
         <Prenom>KENZA</Prenom>
         <Email>kenza.elHariri@etu.uae.ac.ma</Email>
@@ -5859,7 +5859,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000755" sexe="Homme" date_naissance="2002-10-18">
+    <Etudiant id_etudiant="20000755" sexe="Homme" date_naissance="2002-10-18">
         <Nom>EL HARRACHI</Nom>
         <Prenom>ABDERRAHMANE</Prenom>
         <Email>abderrahmane.elHarrachi@etu.uae.ac.ma</Email>
@@ -6048,7 +6048,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000716" sexe="Homme" date_naissance="2000-03-31">
+    <Etudiant id_etudiant="20000716" sexe="Homme" date_naissance="2000-03-31">
         <Nom>EL MAFTOUHI</Nom>
         <Prenom>BILAL</Prenom>
         <Email>bilal.elMaftouhi@etu.uae.ac.ma</Email>
@@ -6237,7 +6237,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="18008815" sexe="Homme" date_naissance="2000-09-23">
+    <Etudiant id_etudiant="18008815" sexe="Homme" date_naissance="2000-09-23">
         <Nom>EL MAIMOUNI</Nom>
         <Prenom>MOHAMED AMINE</Prenom>
         <Email>mohamed.elMaimouni@etu.uae.ac.ma</Email>
@@ -6426,7 +6426,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20006989" sexe="Femme" date_naissance="2002-06-13">
+    <Etudiant id_etudiant="20006989" sexe="Femme" date_naissance="2002-06-13">
         <Nom>EL MOUMOUHI</Nom>
         <Prenom>HOUDA</Prenom>
         <Email>houda.elMoumouhi@etu.uae.ac.ma</Email>
@@ -6615,7 +6615,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20007067" sexe="Femme" date_naissance="2002-06-19">
+    <Etudiant id_etudiant="20007067" sexe="Femme" date_naissance="2002-06-19">
         <Nom>EL OMARI</Nom>
         <Prenom>IMANE</Prenom>
         <Email>imane.elOmari@etu.uae.ac.ma</Email>
@@ -6804,7 +6804,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19001413" sexe="Femme" date_naissance="2002-05-11">
+    <Etudiant id_etudiant="19001413" sexe="Femme" date_naissance="2002-05-11">
         <Nom>EL YAMLAHI</Nom>
         <Prenom>AICHA</Prenom>
         <Email>aicha.elYamlahi@etu.uae.ac.ma</Email>
@@ -6993,7 +6993,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="17004026" sexe="Femme" date_naissance="2003-10-03">
+    <Etudiant id_etudiant="17004026" sexe="Femme" date_naissance="2003-10-03">
         <Nom>EL YAZGHI</Nom>
         <Prenom>MARYEM</Prenom>
         <Email>meryem.elYazghi@etu.uae.ac.ma</Email>
@@ -7182,7 +7182,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000759" sexe="Femme" date_naissance="2000-10-18">
+    <Etudiant id_etudiant="20000759" sexe="Femme" date_naissance="2000-10-18">
         <Nom>ENNAJARI</Nom>
         <Prenom>OUMAIMA</Prenom>
         <Email>oumaima.ennajari@etu.uae.ac.ma</Email>
@@ -7371,7 +7371,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19005693" sexe="Femme" date_naissance="2002-04-05">
+    <Etudiant id_etudiant="19005693" sexe="Femme" date_naissance="2002-04-05">
         <Nom>ESSAIH</Nom>
         <Prenom>ASMAE</Prenom>
         <Email>asmae.essaih@etu.uae.ac.ma</Email>
@@ -7560,7 +7560,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000777" sexe="Homme" date_naissance="2002-05-13">
+    <Etudiant id_etudiant="20000777" sexe="Homme" date_naissance="2002-05-13">
         <Nom>GLIOUAL</Nom>
         <Prenom>YASSINE</Prenom>
         <Email>yassine.glioual@etu.uae.ac.ma</Email>
@@ -7749,7 +7749,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19005656" sexe="Homme" date_naissance="2001-06-23">
+    <Etudiant id_etudiant="19005656" sexe="Homme" date_naissance="2001-06-23">
         <Nom>GOMAIRI</Nom>
         <Prenom>HAMZA</Prenom>
         <Email>hamza.gomairi@etu.uae.ac.ma</Email>
@@ -7938,7 +7938,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002433" sexe="Femme" date_naissance="2001-02-21">
+    <Etudiant id_etudiant="20002433" sexe="Femme" date_naissance="2001-02-21">
         <Nom>HAMDAN</Nom>
         <Prenom>KARIMA</Prenom>
         <Email>karima.hamdan@etu.uae.ac.ma</Email>
@@ -8127,7 +8127,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002532" sexe="Homme" date_naissance="2000-06-16">
+    <Etudiant id_etudiant="20002532" sexe="Homme" date_naissance="2000-06-16">
         <Nom>HARRAK</Nom>
         <Prenom>YOUSSEF</Prenom>
         <Email>youssef.harrak@etu.uae.ac.ma</Email>
@@ -8316,7 +8316,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000763" sexe="Homme" date_naissance="2001-08-29">
+    <Etudiant id_etudiant="20000763" sexe="Homme" date_naissance="2001-08-29">
         <Nom>HAYAOUI</Nom>
         <Prenom>MOUAD</Prenom>
         <Email>mouad.hayaoui@etu.uae.ac.ma</Email>
@@ -8505,7 +8505,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000740" sexe="Femme" date_naissance="2000-06-11">
+    <Etudiant id_etudiant="20000740" sexe="Femme" date_naissance="2000-06-11">
         <Nom>HIMMI</Nom>
         <Prenom>HAJAR</Prenom>
         <Email>hajar.himmi@etu.uae.ac.ma</Email>
@@ -8694,7 +8694,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002137" sexe="Homme" date_naissance="2001-07-28">
+    <Etudiant id_etudiant="20002137" sexe="Homme" date_naissance="2001-07-28">
         <Nom>IDRISSI</Nom>
         <Prenom>YASSINE</Prenom>
         <Email>yassine.idrissi@etu.uae.ac.ma</Email>
@@ -8883,7 +8883,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20006985" sexe="Femme" date_naissance="2000-07-04">
+    <Etudiant id_etudiant="20006985" sexe="Femme" date_naissance="2000-07-04">
         <Nom>JAADA</Nom>
         <Prenom>ZAHAIRA</Prenom>
         <Email>zahaira.jaada@etu.uae.ac.ma</Email>
@@ -9072,7 +9072,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002554" sexe="Homme" date_naissance="2002-08-27">
+    <Etudiant id_etudiant="20002554" sexe="Homme" date_naissance="2002-08-27">
         <Nom>KACHAR</Nom>
         <Prenom>NABIL</Prenom>
         <Email>nabil.kachar@etu.uae.ac.ma</Email>
@@ -9261,7 +9261,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20009742" sexe="Femme" date_naissance="2000-10-03">
+    <Etudiant id_etudiant="20009742" sexe="Femme" date_naissance="2000-10-03">
         <Nom>KDIDAR</Nom>
         <Prenom>HAJAR</Prenom>
         <Email>hajar.kdidar@etu.uae.ac.ma</Email>
@@ -9450,7 +9450,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19006706" sexe="Femme" date_naissance="2000-11-14">
+    <Etudiant id_etudiant="19006706" sexe="Femme" date_naissance="2000-11-14">
         <Nom>KEFFAOUI</Nom>
         <Prenom>NOHA</Prenom>
         <Email>noha.keffaoui@etu.uae.ac.ma</Email>
@@ -9639,7 +9639,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20006930" sexe="Femme" date_naissance="2000-03-21">
+    <Etudiant id_etudiant="20006930" sexe="Femme" date_naissance="2000-03-21">
         <Nom>KHALLOUFI</Nom>
         <Prenom>AYA</Prenom>
         <Email>aya.khalloufi@etu.uae.ac.ma</Email>
@@ -9828,7 +9828,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000754" sexe="Femme" date_naissance="2002-09-21">
+    <Etudiant id_etudiant="20000754" sexe="Femme" date_naissance="2002-09-21">
         <Nom>LAABADI</Nom>
         <Prenom>HOUDA</Prenom>
         <Email>houda.laabadi@etu.uae.ac.ma</Email>
@@ -10017,7 +10017,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19002804" sexe="Homme" date_naissance="2003-01-05">
+    <Etudiant id_etudiant="19002804" sexe="Homme" date_naissance="2003-01-05">
         <Nom>LAHOIENI</Nom>
         <Prenom>ABDERRAHIM</Prenom>
         <Email>abderrahim.lahoieni@etu.uae.ac.ma</Email>
@@ -10206,7 +10206,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19001375" sexe="Femme" date_naissance="2002-05-14">
+    <Etudiant id_etudiant="19001375" sexe="Femme" date_naissance="2002-05-14">
         <Nom>LAKRAMAT</Nom>
         <Prenom>HASNAE</Prenom>
         <Email>hasnae.lakramat@etu.uae.ac.ma</Email>
@@ -10395,7 +10395,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000731" sexe="Homme" date_naissance="2003-07-17">
+    <Etudiant id_etudiant="20000731" sexe="Homme" date_naissance="2003-07-17">
         <Nom>MOUNTASSIR</Nom>
         <Prenom>REDA</Prenom>
         <Email>reda.nountassir@etu.uae.ac.ma</Email>
@@ -10584,7 +10584,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000513" sexe="Femme" date_naissance="2002-07-02">
+    <Etudiant id_etudiant="20000513" sexe="Femme" date_naissance="2002-07-02">
         <Nom>NAYMA</Nom>
         <Prenom>OMAYMA</Prenom>
         <Email>omayma.nayma@etu.uae.ac.ma</Email>
@@ -10773,7 +10773,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20007695" sexe="Femme" date_naissance="2000-12-19">
+    <Etudiant id_etudiant="20007695" sexe="Femme" date_naissance="2000-12-19">
         <Nom>RANBOUK</Nom>
         <Prenom>LAMIAE</Prenom>
         <Email>lamiae.ranbook@etu.uae.ac.ma</Email>
@@ -10962,7 +10962,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="19006284" sexe="Homme" date_naissance="2001-12-06">
+    <Etudiant id_etudiant="19006284" sexe="Homme" date_naissance="2001-12-06">
         <Nom>RAYES</Nom>
         <Prenom>ABDELKOUDOUS</Prenom>
         <Email>rayes.abdelkoudous@etu.uae.ac.ma</Email>
@@ -11151,7 +11151,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000721" sexe="Homme" date_naissance="2001-05-27">
+    <Etudiant id_etudiant="20000721" sexe="Homme" date_naissance="2001-05-27">
         <Nom>SAMADI</Nom>
         <Prenom>IMAD</Prenom>
         <Email>imad.samadi@etu.uae.ac.ma</Email>
@@ -11340,7 +11340,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20000491" sexe="Femme" date_naissance="2002-08-22">
+    <Etudiant id_etudiant="20000491" sexe="Femme" date_naissance="2002-08-22">
         <Nom>SAMADI</Nom>
         <Prenom>MARIA</Prenom>
         <Email>maria.zouaki@etu.uae.ac.ma</Email>
@@ -11529,7 +11529,7 @@
             </Matiere>
         </Module>
     </Etudiant>
-    <Etudiant idetudiant="20002123" sexe="Homme" date_naissance="2002-10-27">
+    <Etudiant id_etudiant="20002123" sexe="Homme" date_naissance="2002-10-27">
         <Nom>ZAOUI</Nom>
         <Prenom>OUSSAMA</Prenom>
         <Email>oussama.zaoui@etu.uae.ac.ma</Email>
