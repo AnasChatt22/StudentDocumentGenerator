@@ -83,7 +83,7 @@ class CreateXML:
 
                 for module in self.modules:
                     module_element = ET.SubElement(etudiant_element, "Module", id_module=str(module.id_module))
-                    ET.SubElement(module_element, "Désignation").text = module.designation
+                    ET.SubElement(module_element, "Designation").text = module.designation
                     ET.SubElement(module_element, "Responsable").text = module.responsable
                     ET.SubElement(module_element, "Semestre").text = str(module.semestre)
 
