@@ -1238,7 +1238,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1316,7 +1316,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1370,7 +1370,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1448,7 +1448,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1502,7 +1502,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1580,7 +1580,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1634,7 +1634,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1712,7 +1712,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1766,7 +1766,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1844,7 +1844,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1898,7 +1898,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -1976,7 +1976,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2030,7 +2030,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2108,7 +2108,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2162,7 +2162,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2240,7 +2240,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2294,7 +2294,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation systèmes">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2372,7 +2372,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="16h30-18h" type="">
-                    <Matière designation="Espagnol ">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2500,7 +2500,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2632,7 +2632,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2764,7 +2764,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -2896,7 +2896,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3028,7 +3028,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3160,7 +3160,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3292,7 +3292,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3424,7 +3424,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3556,7 +3556,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="14h30-16h" type="">
-                    <Matière designation="Gestion des données distribuées">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3592,7 +3592,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation déclarative">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3638,13 +3638,13 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="13h30-15h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3724,7 +3724,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation déclarative">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3770,13 +3770,13 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="13h30-15h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3856,7 +3856,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation déclarative">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3902,13 +3902,13 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="13h30-15h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -3988,7 +3988,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation déclarative">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -4034,13 +4034,13 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="13h30-15h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -4120,7 +4120,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation déclarative">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -4166,13 +4166,13 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="13h30-15h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -4252,7 +4252,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation déclarative">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -4298,13 +4298,13 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="13h30-15h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -4384,7 +4384,7 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Programmation déclarative">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
@@ -4430,13 +4430,13 @@
                     </Matière>
                 </Seance>
                 <Seance horaire="13h30-15h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
                 </Seance>
                 <Seance horaire="15h30-17h" type="">
-                    <Matière designation="Projet collectif et stage">
+                    <Matière designation="">
                         <Professeur/>
                         <Salle/>
                     </Matière>
