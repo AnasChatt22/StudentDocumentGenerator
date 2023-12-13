@@ -66,7 +66,6 @@ def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
 
 
 def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
-    global semaine_element, jour_element, designation
     try:
         read_xl_emplois = pd.ExcelFile(Excel_Path_Emplois)
         read_xl_module = pd.read_excel(Excel_Path_Modules)
