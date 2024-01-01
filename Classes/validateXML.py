@@ -31,3 +31,5 @@ def validate_with_xsd(xml_file_path, xsd_file_path):
         print("XSD File error: ", e)
         return False
 
+
+
