@@ -1,7 +1,8 @@
 declare variable $idEtudiant external;
 <html>
    <head>
-         <link rel="stylesheet" type="text/css" href="../css/attestation.css" />
+         <link rel="stylesheet" type="text/css" href="../FichiersXML/CSS/attestation.css" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
    </head>
    <body margin="200px 200px">
       <div class="top-box">

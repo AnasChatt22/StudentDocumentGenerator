@@ -2650,7 +2650,7 @@
         </Module>
         <MoyenneSemestre3>12.15</MoyenneSemestre3>
         <MoyenneSemestre4>9.72</MoyenneSemestre4>
-        <MoyenneGenerale>10.93</MoyenneGenerale>
+        <MoyenneGenerale>16.93</MoyenneGenerale>
     </Etudiant>
     <Etudiant id_etudiant="20000730" sexe="Femme" date_naissance="2002-08-07">
         <Nom>BOUALI</Nom>

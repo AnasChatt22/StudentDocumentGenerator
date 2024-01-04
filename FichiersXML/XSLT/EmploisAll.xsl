@@ -39,6 +39,28 @@
                     .type-TD {
                     background-color: #ffffaa; /* Light Yellow for TD */
                     }
+                    #legend {
+                    margin-top: 20px;
+                    text-align: center;
+                    }
+
+                    .legend-item {
+                    display: inline-block;
+                    margin-right: 20px;
+                    vertical-align: middle;
+                    }
+
+                    .color-square {
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #000;
+                    display: inline-block;
+                    }
+
+                    .legend-text {
+                    margin-left: 5px;
+                    display: inline-block;
+                    }
                 </style>
             </head>
             <body>
@@ -202,5 +224,38 @@
                 <th>18:00</th>
             </tr>
         </table>
+        <div id="legend">
+            <div class="legend-item">
+                <div class="color-square" style="background-color: #ddaaff;"/>
+                <div class="legend-text">Cours</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-square" style="background-color: #ffffaa;"/>
+                <div class="legend-text">TD</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-square" style="background-color: #aaffaa;"/>
+                <div class="legend-text">TP</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-square" style="background-color: #ffb9a2;"/>
+                <div class="legend-text">DS</div>
+            </div>
+            <!-- Ajoutez d'autres éléments de légende au besoin -->
+        </div>
+        <div id="legend">
+            <div class="legend-item">
+                <div class="color-square" style="background-color: #ffbb5c;"/>
+                <div class="legend-text">Projet</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-square" style="background-color: #35ff4e;"/>
+                <div class="legend-text">Autre</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-square" style="background-color: yellow;"/>
+                <div class="legend-text">Réservation</div>
+            </div>
+        </div>
     </xsl:template>
 </xsl:stylesheet>

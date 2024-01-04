@@ -5,7 +5,7 @@ from tkinter import messagebox, filedialog
 import customtkinter as ctk
 from PIL import Image
 
-import DownloadPDF as xp
+import Generation.generate as gn
 import HomePage as hp
 
 
@@ -19,18 +19,37 @@ def SignIn(root):
     image_rlv_gen = ctk.CTkImage(light_image=Image.open("./Images/relv_gen.png"), size=(88, 96))
 
     def Telecharger(button):
+        file_types = [("PDF files", "*.pdf")]
         match button:
             case "emploi":
+                options = {
+                    'quiet': '',
+                    'encoding': 'utf-8',
+                    'page-width': '1300px',
+                    'page-height': '750px'
+                }
                 xml_emploi = "../FichiersXML/XML/Emploi.xml"
-                xsl_emploi = "../FichiersXML/XSLTanas/EmploisAll.xsl"
-                file_types = [("PDF files", "*.pdf")]
-                pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types, initialfile="EmploisGINF2")
-                print(pdf_output)
+                xsl_emploi = "../FichiersXML/XSLT/EmploisAll.xsl"
+                pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
+                                                          initialfile="EmploisGINF2")
                 if pdf_output:
-                    if xp.Download_emploi(xml_emploi, xsl_emploi, pdf_output):
+                    if gn.generate_pdf_from_xslt(xml_emploi, xsl_emploi, pdf_output, options):
                         messagebox.showinfo("Info de Téléchargement", "Emploi du temps téléchargé avec succès !")
             case "rlv_gen":
-                pass
+                options = {
+                    'quiet': '',
+                    'encoding': 'utf-8',
+                    'page-width': '2000px',
+                    'page-height': '800px'
+                }
+                xml_rlv_gen = "../FichiersXML/XML/GINF2.xml"
+                xsl_rlv_gen = "../FichiersXML/XSLT/releve_general.xsl"
+                pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
+                                                          initialfile="RelevéGINF2")
+                if pdf_output:
+                    if gn.generate_pdf_from_xslt(xml_rlv_gen, xsl_rlv_gen, pdf_output, options):
+                        messagebox.showinfo("Info de Téléchargement",
+                                            "Relevé général de notes téléchargé avec succès !")
 
     def sign_in():
         id_etudiant = id_etd_input.get()

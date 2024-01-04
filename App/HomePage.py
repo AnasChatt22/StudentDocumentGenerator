@@ -4,7 +4,7 @@ from tkinter import filedialog, messagebox
 import customtkinter as ctk
 from PIL import Image
 
-import DownloadPDF as xp
+import Generation.generate as gn
 import SignIn as si
 
 
@@ -15,31 +15,39 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
         si.SignIn(root)
 
     def Telecharger(button):
+        xml_GINF2 = "../FichiersXML/XML/GINF2.xml"
         file_types = [("PDF files", "*.pdf")]
         match button:
             case "rlv_note":
-                pass
+                xquery_rlv_note = "../FichiersXML/FO/releve_personnel_pdf.xquery"
+                pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
+                                                          initialfile=f"Relevé_perso_{prenom}_{nom}")
+                if pdf_output:
+                    if gn.generate_pdf_from_xquery_foo(xml_GINF2, xquery_rlv_note, pdf_output, id_etudiant):
+                        messagebox.showinfo("Info de Téléchargement", "Relevé personnel téléchargé !")
             case "att_sco":
-                pass
+                xquery_att_sco = "../FichiersXML/FO/attestation_pdf.xquery"
+                pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
+                                                          initialfile=f"Attestation_scolarité_{prenom}_{nom}")
+                if pdf_output:
+                    if gn.generate_pdf_from_xquery_foo(xml_GINF2, xquery_att_sco, pdf_output, id_etudiant):
+                        messagebox.showinfo("Info de Téléchargement", "Attestation de scolarité téléchargé !")
             case "att_reuss":
-                xml_att_reuss = "../FichiersXML/XML/GINF2.xml"
-                xsl_att_reuss = "../FichiersXML/XSLTanas/Attestation_reussite.xsl"
+                options = {
+                    'quiet': '',
+                    'encoding': 'utf-8'
+                }
+                xsl_att_reuss = "../FichiersXML/XSLT/Attestation_reussite.xsl"
                 if float(moyenneGen) < 12:
                     messagebox.showwarning("Attention", "Etudiant non admis (Moyenne < 12)")
                 else:
                     pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                               initialfile=f"Attestation_reussite_{prenom}_{nom}")
                     if pdf_output:
-                        if xp.Download_Att_reuss(xml_att_reuss, xsl_att_reuss, pdf_output, id_etudiant):
-                            messagebox.showinfo("Info de Téléchargement", "Attestaion de réussite téléchargée !")
+                        if gn.generate_pdf_from_xslt(xml_GINF2, xsl_att_reuss, pdf_output, options, id_etudiant):
+                            messagebox.showinfo("Info de Téléchargement", "Attestation de réussite téléchargée !")
             case "carte_etd":
-                xml_carte_etd = "../FichiersXML/XML/GINF2.xml"
-                xsl_carte_etd = "../FichiersXML/XSLTanas/CarteEtd.xsl"
-                pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
-                                                          initialfile=f"Carte_étudiant_{prenom}_{nom}")
-                if pdf_output:
-                    if xp.Download_CarteEtd(xml_carte_etd, xsl_carte_etd, pdf_output, id_etudiant):
-                        messagebox.showinfo("Info de Téléchargement", "Carte d'étudiant téléchargée !")
+                pass
 
     # Fonts
     ButtonsFont = ctk.CTkFont(family="Microsoft YaHei UI Light", size=16, weight="bold")
