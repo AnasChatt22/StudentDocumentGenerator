@@ -24,7 +24,8 @@
 
                     .card {
                     background: linear-gradient(#cff1ff, 15% ,white);
-                    height : 70%;
+                    width: 500;
+                    height : 280;
                     border: 1px solid #E66E00;
                     border-radius: 5px;
                     overflow: hidden;

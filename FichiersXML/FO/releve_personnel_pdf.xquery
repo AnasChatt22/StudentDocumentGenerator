@@ -105,7 +105,7 @@ declare variable $idEtudiant external;
       </fo:block-container>
     <fo:block-container margin-top="40px" font-weight="600" width="100%">
     <fo:block>
-      <fo:inline>Fait à Tanger le</fo:inline>
+      <fo:inline>Fait à Tanger le </fo:inline>
         {
           let $currentDay := day-from-date(current-date())
           return <fo:inline>{day-from-date(current-date())}/{month-from-date(current-date())}/{year-from-date(current-date())}</fo:inline>

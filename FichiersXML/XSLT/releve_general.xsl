@@ -9,42 +9,32 @@
                 <title>Employees</title>
                 <style type="text/css">
                     @page{
-                    size: a4 landscape;
+                    size: A4 landscape;
                     }
                     body {
-                    margin-top:100px;
-                    font-family: Helvetica, Arial, sans-serif;
-                    font-size : 8px;
+                    font-family: Arial, sans-serif;
                     position:relative;
                     }
-                    .header {
-                    color: #FFFFFF;
-                    }
                     table {
-                    font-family: arial, sans-serif;
                     border-collapse: collapse;
                     width: 100%;
                     margin:auto;
                     }
                     th{
-
-                    vertical-align: bottom;
                     background-color: #cce;
                     }
-
                     td, th {
                     border: 1px solid black;
-                    text-align: left;
+                    text-align: center;
                     padding: 8px;
-                    padding-left:1px;
-                    width:100px
+                    width:200px
                     }
 
                 </style>
             </head>
             <body>
-                <h1 style="text-align : center ;width:100% ;margin:100px auto;" > Semetre 3 </h1>
-                <table>
+                <h1 style="text-align : center ;" > Semestre 3 </h1>
+                <table style="margin-bottom:250px;">
                     <tr>
                         <th style= "border: 0px solid #dddddd;background-color: white;">
                         </th>
@@ -53,16 +43,13 @@
                         <th style= "border: 0px solid #dddddd;background-color: white;">
                         </th>
                         <xsl:for-each select="Etudiants/Etudiant[1]/Module[Semestre=3]">
-
                                 <th colspan="3" style="background-color: #cce; ">
                                     <xsl:value-of select="Designation"/>
                                 </th>
-
-
                         </xsl:for-each>
                     </tr>
                     <tr>
-                        <td style=" min-width:25px;text-align:left;font-weight:600;">
+                        <td style=" min-width:25px;font-weight:600;">
                             <p>Code Apogé</p>
                         </td>
                         <td style="min-width:30px;text-align:center;font-weight:600;">
@@ -73,17 +60,17 @@
                         </td>
                         <xsl:for-each select="Etudiants/Etudiant[1]/Module[Semestre=3]">
 
-                            <td style="min-width:15px;text-align:left; background-color:rgb(228, 240, 245);">
+                            <td style="min-width:15px; background-color:rgb(228, 240, 245);">
                                     <xsl:value-of select="Matiere[1]/Designation"/>
                                 </td>
-                            <td style="min-width:15px;text-align:left; background-color:rgb(228, 240, 245);">
+                            <td style="min-width:15px; background-color:rgb(228, 240, 245);">
                                     <xsl:value-of select="Matiere[last()]/Designation"/>
                                 </td>
-                            <td style="min-width:15px;font-weight:600;text-align:left;background-color:rgb(228, 240, 150);">
+                            <td style="min-width:15px;font-weight:600;background-color:rgb(228, 240, 150);">
                                 <p>MOYENNE</p>
                             </td>
                         </xsl:for-each>
-                        <td style="min-width:15px;font-weight:600;text-align:left;">
+                        <td style="min-width:15px;font-weight:600;">
                             <p>MOYENNE</p>
                         </td>
                     </tr>
@@ -96,7 +83,7 @@
                                 <td style="min-width:35px;">
                                     <xsl:value-of select="Nom"/>
                                 </td>
-                                <td style="min-width:25px;text-align:right;padding-right:1px">
+                                <td style="min-width:25px;padding-right:1px">
                                     <xsl:value-of select="Prenom"/>
                                 </td>
                                 <xsl:for-each select="Module[Semestre=3]">
@@ -170,7 +157,7 @@
                         </xsl:for-each>
 
                 </table>
-                <h1 style="text-align : center;width:100% ;margin:100px auto;" > Semetre 4 </h1>
+                <h1 style="text-align : center;" > Semestre 4 </h1>
                 <table >
                     <tr>
                         <th style= "border: 0px solid #dddddd;background-color: white;">
@@ -189,7 +176,7 @@
                         </xsl:for-each>
                     </tr>
                     <tr>
-                        <td style=" min-width:25px;text-align:left;font-weight:600;">
+                        <td style=" min-width:25px;font-weight:600;">
                             <p>Code Apogé</p>
                         </td>
                         <td style="min-width:30px;text-align:center;font-weight:600;">
@@ -200,17 +187,17 @@
                         </td>
                         <xsl:for-each select="Etudiants/Etudiant[1]/Module[Semestre=4]">
 
-                            <td style="min-width:15px;text-align:left; background-color:rgb(228, 240, 245);">
+                            <td style="min-width:15px; background-color:rgb(228, 240, 245);">
                                     <xsl:value-of select="Matiere[1]/Designation"/>
                                 </td>
-                            <td style="min-width:15px;text-align:left; background-color:rgb(228, 240, 245);">
+                            <td style="min-width:15px; background-color:rgb(228, 240, 245);">
                                     <xsl:value-of select="Matiere[last()]/Designation"/>
                                 </td>
-                            <td style="min-width:15px;font-weight:600;text-align:left;background-color:rgb(228, 240, 150);">
+                            <td style="min-width:15px;font-weight:600;background-color:rgb(228, 240, 150);">
                                 <p>MOYENNE</p>
                             </td>
                         </xsl:for-each>
-                        <td style="min-width:15px;font-weight:600;text-align:left;">
+                        <td style="min-width:15px;font-weight:600;">
                             <p>MOYENNE</p>
                         </td>
                     </tr>

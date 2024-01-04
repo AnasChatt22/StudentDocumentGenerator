@@ -2,7 +2,8 @@ declare variable $idEtudiant external;
 
 <html>
    <head>
-         <link rel="stylesheet" type="text/css" href="releve_personnel.css" />
+        <link rel="stylesheet" type="text/css" href="../FichiersXML/CSS/releve_personnel.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
    </head>
    <body>
       <div class="top-box">
