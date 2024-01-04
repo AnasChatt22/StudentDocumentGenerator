@@ -1,51 +1,43 @@
-# Gestion des Étudiants - Projet XML
+## Student Management - XML Project
 
-Ce projet a pour objectif de gérer les étudiants de la classe GINF2, leurs notes pour les modules et leur emploi du temps. Il utilise XML, XSD, DTD, XSLT, XSL-FO, XQuery et le langage Python.
+This project aims to manage the students of the GINF2 class, their grades for modules, and their schedule. It utilizes XML, XSD, DTD, XSLT, XSL-FO, XQuery, and the Python language.
 
-## Contenu du Projet
+## Project Contents
 
 - [Introduction](#introduction)
-- [Fichiers Excel](#fichiers-excel)
-- [Fichiers XML](#fichiers-xml)
-- [Transformations XSLT](#transformations-xslt)
-- [Génération de PDF avec XSL-FO](#génération-de-pdf-avec-xsl-fo)
-- [Requêtes XQuery](#requêtes-xquery)
-- [Application Desktop avec Tkinter](#application-desktop-avec-tkinter)
+- [Excel Files](#excel-files)
+- [XML Files](#xml-files)
+- [XSLT Transformations](#xslt-transformations)
+- [PDF Generation with XSL-FO](#pdf-generation-with-xsl-fo)
+- [XQuery Queries](#xquery-queries)
+- [Desktop Application with Tkinter](#desktop-application-with-tkinter)
 
 ## Introduction
 
-Ce projet a été créé dans le cadre de la gestion des étudiants de la classe GINF2. Il utilise diverses technologies XML pour stocker, valider et présenter les données des étudiants.
+This project was created for the management of GINF2 class students. It employs various XML technologies to store, validate, and present student data.
 
-## Fichiers Excel
+## Excel Files
 
-Le projet utilise trois fichiers Excel pour stocker les informations sur les étudiants, les notes des modules et la liste des modules. Ces fichiers sont :
-- `etudiants.xlsx` : Informations sur les étudiants (code, nom, prénom, sexe).
-- `notes.xlsx` : Notes de toutes les matières pour chaque module et étudiant.
-- `modules.xlsx` : Liste des modules avec leurs matières associées.
-- `Emplois.xlsx` : L'emploi du temps.
+The project uses three Excel files to store information about students, module grades, and the list of modules. These files are:
+- `students.xlsx`: Information about students (code, name, surname, gender).
+- `modules.xlsx`: List of modules with their associated subjects and responsables.
+- `Emploi.xlsx`: Time Schedule.
 
-## Fichiers XML
+## XML Files
 
-Les fichiers XML sont générés à partir des fichiers Excel à l'aide de scripts Python. Les fichiers XML résultants incluent :
-- `etudiants.xml` : Informations sur les étudiants.
-- `notes_modules.xml` : Notes des modules pour chaque étudiant.
-- `modules.xml` : Liste des modules avec leurs matières.
+XML files are generated from Excel files using Python scripts. The resulting XML files include:
+- `students.xml`: Data about students and subjects for each module.
+- `Emploi.xml`: Time Schedule Data.
 
-## Transformations XSLT
+## XSLT Transformations
 
-Les fichiers XML sont transformés en fichiers HTML à l'aide de XSLT pour générer des relevés de notes, des cartes d'étudiants, des attestations de scolarité, et des emplois du temps.
+XML files are transformed into HTML files using XSLT to generate grade reports, student cards, certificates of enrollment, and schedules.
 
-## Génération de PDF avec XSL-FO
+## PDF Generation with HTML, XSL-FO, XSLT and XQuery
 
-Les fichiers XML sont également transformés en fichiers XSL-FO pour la génération de fichiers PDF. Ces fichiers PDF incluent des versions formatées des relevés de notes, cartes d'étudiants et attestations de scolarité.
-
-## Requêtes XQuery
-
-Des requêtes XQuery sont utilisées pour extraire des informations spécifiques des fichiers XML, facilitant ainsi l'accès à des données précises.
-
-## Application Desktop avec Tkinter
-
-Une application desktop a été développée en utilisant Tkinter en Python. L'application offre une interface utilisateur pour rechercher et afficher les emplois du temps, les attestations de scolarité et les relevés de notes des étudiants.
+XML files are also transformed into XSL-FO files for PDF file generation. These PDF files include formatted versions of grade reports, student cards, and certificates of enrollment.
 
 
+## Desktop Application with CustomTkinter
 
+A desktop application has been developed using CustomTkinter in Python. The application provides a user interface to search and display schedules, certificates of enrollment, and grade reports for students.
