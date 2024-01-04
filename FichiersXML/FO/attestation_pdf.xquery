@@ -1,5 +1,4 @@
 declare variable $idEtudiant external;
-
 <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
       <fo:layout-master-set>
         <fo:simple-page-master master-name="A4" page-height="29.7cm" page-width="21cm" margin-top="2cm" margin-bottom="2cm" margin-left="1cm" margin-right="1cm">
@@ -8,22 +7,16 @@ declare variable $idEtudiant external;
       </fo:layout-master-set>
       <fo:page-sequence master-reference="A4">
         <fo:flow flow-name="xsl-region-body">
-        <fo:block font-family="Helvetica, Arial, sans-serif" font-size="8pt">
-           <fo:block-container width="99%" margin="auto" margin-top="5px" >
+
+        <fo:block  font-size="8pt">
+           <fo:block-container  width="99%" margin="auto" margin-top="5px" >
             <fo:block>
-               <fo:inline padding-right="580px">Université Abdelmalek Essaadi</fo:inline>
-               <fo:inline >جامعة عبدالمالك السعدي</fo:inline>
+               <fo:inline padding-right="235px">Université Abdelmalek Essaadi</fo:inline>
+               <fo:inline >Ecole Nationale Des Sciences Appliquées de Tanger</fo:inline>
             </fo:block>
-            <fo:block text-align="center">
-                  <fo:inline ><fo:external-graphic src="url('./logoensat.png')"  content-width="100px" content-height='70px'  /></fo:inline >
-            </fo:block>
-            <fo:block text-align="left">
-             <fo:inline padding-right="400px">Ecole Nationale Des Sciences Appliquées de Tanger</fo:inline>
-             <fo:inline >المدرسة الوطنية للعلوم التطبيقية طنجة</fo:inline>
-            </fo:block>
-             <fo:block text-align="left">
-                 <fo:inline padding-right="570px">Service des Affaires Estudiantines</fo:inline>
-                 <fo:inline text-decoration="underline">مصلحة الشؤون الطلابية</fo:inline>
+
+             <fo:block text-align="center" margin-top="15px" >
+                 <fo:inline >Service des Affaires Estudiantines</fo:inline>
              </fo:block>
           </fo:block-container>
 
@@ -34,7 +27,7 @@ declare variable $idEtudiant external;
               <fo:block padding="6px 38px" font-size="24px" text-decoration="underline">ATTESTATION DE SCOLARITE</fo:block>
             </fo:block>
           {
-            for $Etudiant in doc("GINF2.xml")//Etudiant
+            for $Etudiant in doc("../XML/GINF2.xml")//Etudiant
             where $Etudiant/@id_etudiant = $idEtudiant
             return
               <fo:block-container>
@@ -103,4 +96,4 @@ declare variable $idEtudiant external;
           </fo:block>
         </fo:flow>
       </fo:page-sequence>
-    </fo:root>
+</fo:root>

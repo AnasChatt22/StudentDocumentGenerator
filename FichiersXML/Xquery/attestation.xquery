@@ -1,11 +1,9 @@
 declare variable $idEtudiant external;
-
 <html>
    <head>
-
-         <link rel="stylesheet" type="text/css" href="attestation.css" />
+         <link rel="stylesheet" type="text/css" href="../css/attestation.css" />
    </head>
-   <body>
+   <body margin="200px 200px">
       <div class="top-box">
         <div style="width:99%;margin:auto;margin-top:5px;display:flex;flex-direction:row;align-items:center;justify-content: space-between;">
            <div style="text-align:left">
@@ -13,7 +11,6 @@ declare variable $idEtudiant external;
              <h2>Ecole Nationale Des Sciences Appliquées de Tanger</h2>
              <h2 style="text-decoration:underline">service des Affaires Estudiantines</h2>
              </div>
-             <img src='logoensat.png' height='70px' width='100px'></img>
              <div style="text-align:right">
             <h2>المدرسة الوطنية للعلوم التطبيقية طنجة</h2>
             <h2>جامعة عبدالمالك السعدي</h2>
@@ -27,9 +24,7 @@ declare variable $idEtudiant external;
              <h1 style="display:inline-block;padding:6px 38px; font-size:24px;text-decoration:underline">ATTESTATION DE SCOLARITE</h1>
         </div>
       </div>
-
-
-     { for $Etudiant in doc("GINF2.xml")//Etudiant
+     { for $Etudiant in doc("../XML/GINF2.xml")//Etudiant
       where $Etudiant/@id_etudiant = $idEtudiant
       return
       <div>

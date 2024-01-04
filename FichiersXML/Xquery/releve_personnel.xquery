@@ -28,7 +28,7 @@ declare variable $idEtudiant external;
       </div>
 
 
-     { for $Etudiant in doc("GINF2.xml")//Etudiant
+     { for $Etudiant in doc("../XML/GINF2.xml")//Etudiant
       where $Etudiant/@id_etudiant = $idEtudiant
       return
       <div>

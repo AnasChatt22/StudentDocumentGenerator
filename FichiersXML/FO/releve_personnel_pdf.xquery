@@ -11,17 +11,15 @@ declare variable $idEtudiant external;
           <fo:block font-family="Helvetica, Arial, sans-serif" font-size="8pt">
             <fo:block-container border="1px solid black" text-align='center' padding="10px 0px">
               <fo:block >
-                <fo:inline font-weight="bold" padding-right="470px">Université Abdelmalek Essaadi</fo:inline>
-                <fo:inline padding-left="70px">  جامعة عبدالمالك السعدي</fo:inline>
+                <fo:inline font-weight="bold" text-align="center">Université Abdelmalek Essaadi</fo:inline>
               </fo:block>
 
-              <fo:block font-weight="200">Année universitaire 2023/2024 - السنة الجامعية</fo:block>
+              <fo:block font-weight="200">Année universitaire 2023/2024 </fo:block>
             </fo:block-container>
 
-            <fo:block-container>
-              <fo:block margin="12px auto">
-                <fo:inline font-weight="bold" padding-right="400px">Ecole Nationale Des Sciences Appliquées de Tanger</fo:inline>
-                <fo:inline >المدرسة الوطنية للعلوم التطبيقية طنجة</fo:inline>
+            <fo:block-container text-align="center">
+              <fo:block margin="12px auto" text-align="center">
+                <fo:inline font-weight="bold" text-align="center">Ecole Nationale Des Sciences Appliquées de Tanger</fo:inline>
               </fo:block>
               <fo:block-container border="2px solid black" width="80%"  margin="0px 10%" text-align="center" background-color="#808080">
                 <fo:block font-size="18pt" padding="6px 28px">RELEVE DE NOTES ET RESULTATS</fo:block>
@@ -34,7 +32,7 @@ declare variable $idEtudiant external;
 <fo:block-container width="100%">
 
     {
-      for $etudiant in doc("GINF2.xml")//Etudiant[@id_etudiant = $idEtudiant]
+      for $etudiant in doc("../XML/GINF2.xml")//Etudiant[@id_etudiant = $idEtudiant]
       return
       <fo:block margin-top='20px' width="100%">
         <fo:inline font-weight="600" width="100%">{string($etudiant/Nom)}&#160;{string($etudiant/Prenom)}</fo:inline>
@@ -61,12 +59,7 @@ declare variable $idEtudiant external;
             for $module in $etudiant//Module
             return
             <fo:table-row border="1px solid black">
-              <fo:table-cell text-align="left" padding="6px" >{string($module/@id_module)} :
-                {
-                  for $matiere in $module//Matiere
-                  return <fo:block>{string($matiere/Designation)},</fo:block>
-                }
-              </fo:table-cell>
+              <fo:table-cell text-align="left" padding="6px" ><fo:block>{string($module/@id_module)} : {string($module/Designation)}</fo:block></fo:table-cell>
               <fo:table-cell padding="6px"><fo:block>{string($module/Moyenne)}/20</fo:block></fo:table-cell>
               <fo:table-cell padding="6px"><fo:block>S{string($module/Semestre)} 2023/2024</fo:block></fo:table-cell>
               <fo:table-cell padding="6px" ><fo:block>-</fo:block></fo:table-cell>
@@ -110,7 +103,7 @@ declare variable $idEtudiant external;
     }
 
       </fo:block-container>
-    <fo:block-container margin-top="70px" font-weight="600" width="100%">
+    <fo:block-container margin-top="40px" font-weight="600" width="100%">
     <fo:block>
       <fo:inline>Fait à Tanger le</fo:inline>
         {
