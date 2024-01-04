@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="testing">
+      <change afterPath="$PROJECT_DIR$/Classes/generate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/CreateXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/CreateXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersExcel/Emplois.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersExcel/Emplois.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XML/Emploi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XML/Emploi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Etudiant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Matiere.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Module.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Note.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/ValidateXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ValidateXML.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/validateXML.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/FO/attestation_pdf.xquery" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/FO/attestation_pdf.xquery" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/FO/releve_personnel_pdf.xquery" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/FO/releve_personnel_pdf.xquery" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/XSLT/releve_general.xslt" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XSLT/releve_general.xslt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/Xquery/attestation.xquery" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/Xquery/attestation.xquery" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FichiersXML/Xquery/releve_personnel.xquery" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/Xquery/releve_personnel.xquery" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -26,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,28 +80,72 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.CreateXML.executor": "Debug",
+    "Python.CreateXML.executor": "Run",
     "Python.CreateXML2.executor": "Run",
     "Python.Module.executor": "Run",
     "Python.ValidateXML.executor": "Run",
-    "Python.test.executor": "Run",
+    "Python.generate.executor": "Run",
+    "Python.testes.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "anas",
-    "last_opened_file_path": "C:/Users/AnasChatt/Desktop/XMLProjet",
+    "git-widget-placeholder": "seun",
+    "last_opened_file_path": "C:/Users/pc/PycharmProjects/XMLProjet/FichiersXML/FO",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\FichiersXML\FO" />
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\Classes" />
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\FichiersXML\Xquery" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\FichiersXML\GINF2.xml" />
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\Classes" />
+      <recent name="C:\Users\pc\PycharmProjects\XMLProjet\FichiersXML\XML" />
       <recent name="C:\Users\pc\PycharmProjects\XMLProjet\Images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="testes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="XMLProjet" />
+      <selectedOptions>
+        <option name="envPaths" visible="false" />
+      </selectedOptions>
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="basex" value="C:\Program Files (x86)\BaseX\bin" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Classes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Classes/testes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.testes" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -116,10 +170,18 @@
       <workItem from="1702138274780" duration="3480000" />
       <workItem from="1702149960377" duration="7469000" />
       <workItem from="1702200314523" duration="4452000" />
-      <workItem from="1702206325942" duration="439000" />
-      <workItem from="1702206785917" duration="509000" />
-      <workItem from="1702296103417" duration="129000" />
-      <workItem from="1702477699402" duration="14914000" />
+      <workItem from="1702721083289" duration="1602000" />
+      <workItem from="1703322318767" duration="3001000" />
+      <workItem from="1703886258783" duration="219000" />
+      <workItem from="1703939960586" duration="2945000" />
+      <workItem from="1704134273743" duration="1003000" />
+      <workItem from="1704192645583" duration="312000" />
+      <workItem from="1704192971106" duration="201000" />
+      <workItem from="1704193243121" duration="13627000" />
+      <workItem from="1704279360966" duration="363000" />
+      <workItem from="1704284295040" duration="6047000" />
+      <workItem from="1704318381069" duration="5763000" />
+      <workItem from="1704367146353" duration="9926000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -201,15 +263,7 @@
       <option name="project" value="LOCAL" />
       <updated>1702204289737</updated>
     </task>
-    <task id="LOCAL-00011" summary="testing">
-      <option name="closed" value="true" />
-      <created>1702206449470</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1702206449470</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,10 +325,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/XMLProjet$ValidateXML.coverage" NAME="ValidateXML Coverage Results" MODIFIED="1702203412210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
-    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML.coverage" NAME="CreateXML Coverage Results" MODIFIED="1702492999478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML.coverage" NAME="CreateXML Coverage Results" MODIFIED="1702204773296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
     <SUITE FILE_PATH="coverage/XMLProjet$Module.coverage" NAME="Module Coverage Results" MODIFIED="1702129187574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
-    <SUITE FILE_PATH="coverage/XMLProjet$test.coverage" NAME="test Coverage Results" MODIFIED="1702492938985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
-    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML2.coverage" NAME="CreateXML2 Coverage Results" MODIFIED="1702491071285" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$testes.coverage" NAME="testes Coverage Results" MODIFIED="1704369320247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$CreateXML2.coverage" NAME="CreateXML2 Coverage Results" MODIFIED="1702121071361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$ValidateXML.coverage" NAME="ValidateXML Coverage Results" MODIFIED="1704193095164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
+    <SUITE FILE_PATH="coverage/XMLProjet$generate.coverage" NAME="generate Coverage Results" MODIFIED="1704376067046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classes" />
   </component>
 </project>

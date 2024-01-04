@@ -30,6 +30,14 @@ def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
             ET.SubElement(etudiant_element, "Prenom").text = row_etd['prenom']
             ET.SubElement(etudiant_element, "Email").text = row_etd['email']
 
+            # Variables to store cumulative sum and count for moyenne generale
+            sum_moyenne_semestre3 = 0
+            count_modules_semestre3 = 0
+            sum_moyenne_semestre4 = 0
+            count_modules_semestre4 = 0
+            sum_moyenne_generale = 0
+            count_modules = 0
+
             # Iterate over each row in the Modules Excel file
             for _, row_module in read_xl_module.iterrows():
                 # Create a Module element with attributes
@@ -37,6 +45,10 @@ def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
                 ET.SubElement(module_element, "Designation").text = row_module['designation_module']
                 ET.SubElement(module_element, "Responsable").text = row_module['responsable']
                 ET.SubElement(module_element, "Semestre").text = str(row_module['semestre'])
+
+                # Variables to store cumulative sum and count for module moyenne
+                sum_moyenne_module = 0
+                count_matieres = 0
 
                 # Iterate over three potential Matieres
                 for i in range(1, 4):
@@ -48,7 +60,44 @@ def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
                         ET.SubElement(matiere_element, "Designation").text = row_module[f'designation_matiere_{i}']
 
                         # Generate a random Note for Matiere
-                        ET.SubElement(matiere_element, "Note").text = str(round(random.uniform(2.0, 20.0)))
+                        note = round(random.uniform(2.0, 20.0), 2)
+                        ET.SubElement(matiere_element, "Note").text = str(note)
+
+                        # Update module moyenne variables
+                        sum_moyenne_module += note
+                        count_matieres += 1
+
+                # Calculate and add the module average (moyenne) as a sub-element
+                if count_matieres > 0:
+                    moyenne_module = sum_moyenne_module / count_matieres
+                    ET.SubElement(module_element, "Moyenne").text = str(round(moyenne_module, 2))
+
+                    # Update semester moyenne variables
+                    if row_module['semestre'] == 3:
+                        sum_moyenne_semestre3 += moyenne_module
+                        count_modules_semestre3 += 1
+                    elif row_module['semestre'] == 4:
+                        sum_moyenne_semestre4 += moyenne_module
+                        count_modules_semestre4 += 1
+
+                    # Update generale moyenne variables
+                    sum_moyenne_generale += moyenne_module
+                    count_modules += 1
+
+            # Calculate and add the moyenne generale for semestre 3
+            if count_modules_semestre3 > 0:
+                moyenne_semestre3 = sum_moyenne_semestre3 / count_modules_semestre3
+                ET.SubElement(etudiant_element, "MoyenneSemestre3").text = str(round(moyenne_semestre3, 2))
+
+            # Calculate and add the moyenne generale for semestre 4
+            if count_modules_semestre4 > 0:
+                moyenne_semestre4 = sum_moyenne_semestre4 / count_modules_semestre4
+                ET.SubElement(etudiant_element, "MoyenneSemestre4").text = str(round(moyenne_semestre4, 2))
+
+            # Calculate and add the moyenne generale for all semestres
+            if count_modules > 0:
+                moyenne_generale = sum_moyenne_generale / count_modules
+                ET.SubElement(etudiant_element, "MoyenneGenerale").text = str(round(moyenne_generale, 2))
 
         # Format XML file
         xml_string = ET.tostring(xml_doc, encoding="UTF-8")
@@ -79,9 +128,12 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
             sheet_data = pd.read_excel(read_xl_emplois, sheet)
 
             for _, row in sheet_data.iterrows():
-                salle = "" if pd.isna(row['salle']) else row['salle']
-                professeur = "" if pd.isna(row['professeur']) else row['professeur']
-                seance_type = "" if pd.isna(row['type']) else row['type']
+                if pd.isna(row['salle']) or pd.isna(row['professeur']) or pd.isna(row['type']):
+                    continue
+                else:
+                    salle = row['salle']
+                    professeur = row['professeur']
+                    seance_type = row['type']
 
                 if pd.isna(row['id_matiere']):
                     designation = ""
@@ -101,7 +153,8 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
                 if not pd.isna(row['jour']):
                     jour_element = ET.SubElement(semaine_element, "Jour", nom=row['jour'])
 
-                seance_element = ET.SubElement(jour_element, "Seance", horaire=row['horaire'], type=seance_type)
+                seance_element = ET.SubElement(jour_element, "Seance", debut=str(row['debut'])[:5],
+                                               fin=str(row['fin'])[:5], type=seance_type)
                 matiere_element = ET.SubElement(seance_element, "Matière")
                 ET.SubElement(matiere_element, "Designation").text = designation
                 ET.SubElement(matiere_element, "Professeur").text = professeur
@@ -123,13 +176,13 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
 
 if __name__ == "__main__":
     # Example usage
-    etudiant_xl_path = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\FichiersExcel\\Etudiants.xlsx"
-    modules_xl_path = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\FichiersExcel\\Modules.xlsx"
-    emploi_xl_path = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\FichiersExcel\\Emplois.xlsx"
+    etudiant_xl_path = "../FichiersExcel/Etudiants.xlsx"
+    modules_xl_path = "../FichiersExcel/Modules.xlsx"
+    emploi_xl_path = "../FichiersExcel/Emplois.xlsx"
 
-    xml_path_GINF2 = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\FichiersXML\\XML\\GINF2.xml"
-    xml_path_Emploi = "C:\\Users\\AnasChatt\\Desktop\\XMLProjet\\FichiersXML\\XML\\Emploi.xml"
+    xml_path_GINF2 = "../FichiersXML/XML/GINF2.xml"
+    xml_path_Emploi = "../FichiersXML/XML/Emploi.xml"
 
     # Call the function with the specified Excel and XML file paths
-    Creer_xml_GINF2(etudiant_xl_path, modules_xl_path, xml_path_GINF2)
+    # Creer_xml_GINF2(etudiant_xl_path, modules_xl_path, xml_path_GINF2)
     Creer_xml_Emploi(emploi_xl_path, modules_xl_path, xml_path_Emploi)
