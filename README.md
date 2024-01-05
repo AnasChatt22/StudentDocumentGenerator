@@ -1,4 +1,4 @@
-## Student Management - XML Project
+## StudentDocumentGenerator
 
 This project aims to manage the students of the GINF2 class, their grades for modules, and their schedule. It utilizes XML, XSD, DTD, XSLT, XSL-FO, XQuery, and the Python language.
 
@@ -8,9 +8,8 @@ This project aims to manage the students of the GINF2 class, their grades for mo
 - [Excel Files](#excel-files)
 - [XML Files](#xml-files)
 - [XSLT Transformations](#xslt-transformations)
-- [PDF Generation with XSL-FO](#pdf-generation-with-xsl-fo)
-- [XQuery Queries](#xquery-queries)
-- [Desktop Application with Tkinter](#desktop-application-with-tkinter)
+- [PDF Generation with HTML, XSL-FO, XSLT and XQuery](#pdf-generation-with-html-xsl-fo-xslt-and-xquery)
+- [Desktop Application with CustomTkinter](#desktop-application-with-customtkinter)
 
 ## Introduction
 
