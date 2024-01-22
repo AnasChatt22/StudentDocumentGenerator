@@ -6,7 +6,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Employees</title>
+                <title>Relevé générale</title>
                 <style type="text/css">
                     @page{
                     size: A4 landscape;

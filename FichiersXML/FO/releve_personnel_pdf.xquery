@@ -68,35 +68,24 @@ declare variable $idEtudiant external;
           {
             let $moy := sum($etudiant/Module/Moyenne) div count($etudiant//Module)
             return
-            <fo:table-row font-weight="600" >
-              <fo:table-cell ><fo:block>Resultat d'admissionS{string($etudiant/Module[1]/Semestre)}</fo:block></fo:table-cell>
-              <fo:table-cell >
-                <fo:block>{format-number($moy, '0.00')}</fo:block>
-                /20</fo:table-cell>
-              {
-                if ($moy >= 12)
-                then
-                <fo:table-cell ><fo:block>ADMIS</fo:block></fo:table-cell>
-                else
-                <fo:table-cell ><fo:block>REFUSE</fo:block></fo:table-cell>
-              }
-              {
-                if ($moy >= 12)
-                then
-                if ($moy >= 14 )
-                then
-                if ($moy >= 16 )
-                then
-                <fo:table-cell ><fo:block>Très Bien</fo:block></fo:table-cell>
-                else
-                <fo:table-cell ><fo:block>Bien</fo:block></fo:table-cell>
-                else
-                <fo:table-cell ><fo:block>Passable</fo:block></fo:table-cell>
-                else
-                <fo:table-cell ><fo:block>-</fo:block></fo:table-cell>
-              }
+            <fo:table-row font-weight="600">
+                <fo:table-cell padding="6px">
+                    <fo:block>Resultat d'admission</fo:block>
+                </fo:table-cell>
+                <fo:table-cell padding="6px">
+                    <fo:block>{format-number($moy, '0.00')}</fo:block>
+                </fo:table-cell>
+                <fo:table-cell padding="6px" background-color="{if ($moy >= 16) then '#33B2FF' else
+                                                 if ($moy >= 14) then '#33FF36' else
+                                                 if ($moy >= 12) then '#FFF933' else
+                                                 if ($moy >= 8) then '#FFA233' else
+                                                 '#FF3333'}">
+                    <fo:block>
+                        {if ($moy >= 12) then 'ADMIS' else 'REFUSE'}
+                    </fo:block>
+                </fo:table-cell>
             </fo:table-row>
-          }
+            }
           </fo:table-body>
         </fo:table>
         </fo:block>
