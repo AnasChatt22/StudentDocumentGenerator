@@ -136,6 +136,9 @@
             </tr>
             <tr>
                 <th>13:00</th>
+                <xsl:for-each select="Semaine/Jour">
+                    <th></th>
+                </xsl:for-each>
             </tr>
             <tr>
                 <th>13:30</th>

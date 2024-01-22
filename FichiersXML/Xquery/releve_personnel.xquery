@@ -49,7 +49,7 @@ declare variable $idEtudiant external;
             <th>Modules</th>
             <th>Note/Barème</th>
             <th>Session</th>
-            <th>Pts Jury</th>
+            <th>Points Jury</th>
             </tr>
             { for $module in $Etudiant//Module
               return
@@ -65,17 +65,16 @@ declare variable $idEtudiant external;
               </tr>
             }
                   {
-
                      let $moy := sum($Etudiant/Module/Moyenne) div count($Etudiant//Module)
                      return
                     <tr style="border: 0px">
-                     <td style="max-width:200px;font-weight:600">Resultat d'admissionS{$Etudiant/Module[1]/Semestre}</td>
+                     <td style="max-width:200px;font-weight:600">Resultat d'admission S{$Etudiant/Module[1]/Semestre}</td>
                      <td style="text-align:center;font-weight:600">
                      <span>{fn:format-number($moy,'0.00')}</span>
-                      /20</td>
+                     </td>
                      {if ($moy >= 12)
                       then
-                     <td style="text-align:center;font-weight:600">ADMIS</td>
+                     <td style="text-align:center;font-weight:600">ADMIoooS</td>
                       else
                      <td style="text-align:center;font-weight:600">REFUSE</td>
                      }

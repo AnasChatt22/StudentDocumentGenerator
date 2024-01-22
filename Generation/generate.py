@@ -91,8 +91,11 @@ def generate_pdf_from_html(html_file, output_pdf, options=None):
         config = pdf.configuration(wkhtmltopdf=wkhtmltopdf_path)
 
         # Utilisez la configuration lors de la conversion
-        pdf.from_file(html_file, output_pdf, configuration=config, options=options)
-        print("Fichier pdf générer avec succès")
+        if pdf.from_file(html_file, output_pdf, configuration=config, options=options):
+            print("Fichier PDF générer avec succès")
+            return True
+        else:
+            return False
     except Exception as ex:
         print(f"Erreur :{ex}")
 
@@ -163,11 +166,11 @@ output_pdf_rlv_preso = "../FichiersPDF/Releve_perso.pdf"
 output_pdf_att_sco = "../FichiersPDF/Attestation_scolarite.pdf"
 output_pdf_rlv_gen = "../FichiersPDF/Releve_general.pdf"
 
-generate_html_from_xslt(xml_ginf2_path, xslt_rlv_gen_path, output_html_rlv_gen)
+# generate_html_from_xslt(xml_ginf2_path, xslt_rlv_gen_path, output_html_rlv_gen)
 options = {
     'quiet': '',
     'encoding': 'utf-8',
     'page-width': '2000px',
     'page-height': '800px'
 }
-generate_pdf_from_html(output_html_rlv_gen, output_pdf_rlv_gen, options)
+# generate_pdf_from_html(output_html_rlv_gen, output_pdf_rlv_gen, options)

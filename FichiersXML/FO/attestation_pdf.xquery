@@ -1,24 +1,27 @@
 declare variable $idEtudiant external;
 <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
       <fo:layout-master-set>
-        <fo:simple-page-master master-name="A4" page-height="29.7cm" page-width="21cm" margin-top="2cm" margin-bottom="2cm" margin-left="1cm" margin-right="1cm">
+        <fo:simple-page-master master-name="A4" page-height="29.7cm" page-width="21cm" margin-top="0.5cm" margin-bottom="2cm" margin-left="1cm" margin-right="1cm">
           <fo:region-body/>
         </fo:simple-page-master>
       </fo:layout-master-set>
       <fo:page-sequence master-reference="A4">
         <fo:flow flow-name="xsl-region-body">
 
-        <fo:block  font-size="8pt">
-           <fo:block-container  width="99%" margin="auto" margin-top="5px" >
-            <fo:block>
-               <fo:inline padding-right="235px">Université Abdelmalek Essaadi</fo:inline>
-               <fo:inline >Ecole Nationale Des Sciences Appliquées de Tanger</fo:inline>
-            </fo:block>
-
-             <fo:block text-align="center" margin-top="15px" >
-                 <fo:inline >Service des Affaires Estudiantines</fo:inline>
-             </fo:block>
-          </fo:block-container>
+        <fo:block font-size="8pt">
+            <fo:block-container width="100%" text-align="center">
+                <fo:block space-after="10pt">
+                    <fo:external-graphic content-width="25%" content-height="25%" padding-right="400px" src="url(file:/C:/Users/AnasChatt/Desktop/StudentDocumentGenerator/Images/logouae.png)"/>
+                    <fo:external-graphic content-width="5%" content-height="5%" src="url(file:/C:/Users/AnasChatt/Desktop/StudentDocumentGenerator/Images/logoensat.png)"/>
+                </fo:block>
+                <fo:block>
+                    <fo:inline padding-right="235px">Université Abdelmalek Essaadi</fo:inline>
+                    <fo:inline>Ecole Nationale Des Sciences Appliquées de Tanger</fo:inline>
+                </fo:block>
+                 <fo:block text-align="center" margin-top="15px" >
+                     <fo:inline >Service des Affaires Estudiantines</fo:inline>
+                 </fo:block>
+            </fo:block-container>
 
 
         <fo:block width="99%">
@@ -35,14 +38,14 @@ declare variable $idEtudiant external;
              <fo:block >
                  <fo:block margin-top="20px" font-weight='600'>Le Directeur de l'Ecole Nationale des Sciences Appliquées de Tanger atteste que l'étudiant: </fo:block>
              </fo:block>
-             <fo:block >
-                <fo:block font-weight='600' margin-top="20px">{string($Etudiant/Nom)} &#160; {string($Etudiant/Prenom)}</fo:block>
+             <fo:block margin-top="20px">
+                <fo:inline>Nom et prénom : </fo:inline><fo:inline font-weight='600' margin-top="20px">{string($Etudiant/Nom)} &#160; {string($Etudiant/Prenom)}</fo:inline>
              </fo:block>
              <fo:block margin-top="20px">
-                <fo:inline >Numéro de la carte nationale d'étudiant :  </fo:inline ><fo:inline >{$idEtudiant}</fo:inline>
+                <fo:inline>Code apogée de l'étudiant : </fo:inline ><fo:inline >{$idEtudiant}</fo:inline>
              </fo:block>
              <fo:block margin-top="20px">
-                <fo:inline >né le  :  </fo:inline ><fo:inline font-weight='600' >{string($Etudiant/@date_naissance)}</fo:inline>
+                <fo:inline >né le  :  </fo:inline ><fo:inline >{string($Etudiant/@date_naissance)}</fo:inline>
              </fo:block>
              <fo:block >
                 <fo:block margin-top="20px" >Poursuit ses études à l'école Nationale des Sciences Appliquées de Tanger pour l'année universitaire 2023/2024 .</fo:block>
