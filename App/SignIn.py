@@ -1,3 +1,4 @@
+import os
 import tkinter as tk
 import xml.etree.ElementTree as ET
 from tkinter import messagebox, filedialog
@@ -26,7 +27,7 @@ def SignIn(root):
                     'quiet': '',
                     'encoding': 'utf-8',
                     'page-width': '1300px',
-                    'page-height': '750px'
+                    'page-height': '835px'
                 }
                 xml_emploi = "../FichiersXML/XML/Emploi.xml"
                 xsl_emploi = "../FichiersXML/XSLT/EmploisAll.xsl"
@@ -35,6 +36,7 @@ def SignIn(root):
                 if pdf_output:
                     if gn.generate_pdf_from_xslt(xml_emploi, xsl_emploi, pdf_output, options):
                         messagebox.showinfo("Info de Téléchargement", "Emploi du temps téléchargé avec succès !")
+                        os.system(f'start {pdf_output}')
             case "rlv_gen":
                 options = {
                     'quiet': '',
@@ -50,22 +52,21 @@ def SignIn(root):
                     if gn.generate_pdf_from_xslt(xml_rlv_gen, xsl_rlv_gen, pdf_output, options):
                         messagebox.showinfo("Info de Téléchargement",
                                             "Relevé général de notes téléchargé avec succès !")
+                    os.system(f'start {pdf_output}')
 
     def sign_in():
-        id_etudiant = id_etd_input.get()
-
-        if id_etudiant == "":
-            messagebox.showerror("Invalid Inputs", "Error! Username/Password cannot be empty")
+        if len(id_etd_input.get()) == 0:
+            messagebox.showerror("Invalid Inputs", "Erreur! ID étudiant ne peut pas être vide")
             return
 
-        result = check_id_etudiant_exists(id_etudiant)
+        result = check_id_etudiant_exists(id_etd_input.get())
 
         if result:
             nom, prenom, id_etudiant, moyenneGen = result
             frameSignIn.destroy()
             hp.HomePage(root, nom, prenom, moyenneGen, id_etudiant)
         else:
-            messagebox.showerror("Invalid Inputs", "Error! Invalid id_etudiant")
+            messagebox.showerror("Invalid Inputs", "Erreur! ID étudiant n'existe pas")
 
     def check_id_etudiant_exists(id_etudiant):
         tree = ET.parse('../FichiersXML/XML/GINF2.xml')
@@ -80,15 +81,13 @@ def SignIn(root):
                 moyenneGen = etudiant.find('MoyenneGenerale').text
                 return nom, prenom, id_etudiant, moyenneGen
 
-        return None
-
     frameSignIn = ctk.CTkFrame(master=root, fg_color="#fff", bg_color="#fff")
     frameSignIn.pack(fill=tk.BOTH, expand=True)
 
-    frameFormSignIn = ctk.CTkFrame(master=frameSignIn, width=600, fg_color="#fff")
+    frameFormSignIn = ctk.CTkFrame(master=frameSignIn, width=600, fg_color="transparent")
     frameFormSignIn.pack(side=tk.RIGHT, fill=tk.Y)
 
-    frameButtons_signIn = ctk.CTkFrame(master=frameSignIn, width=590, height=590, fg_color="#f8fafc")
+    frameButtons_signIn = ctk.CTkFrame(master=frameSignIn, width=590, height=590, fg_color="#f8f8f8")
     frameButtons_signIn.place(x=305, y=300, anchor=tk.CENTER)
 
     # Sign In Heading
@@ -102,33 +101,33 @@ def SignIn(root):
 
     # Search Button
     SearchButton = ctk.CTkButton(frameFormSignIn, text="Chercher", font=InputFont, width=55, height=35,
-                                 text_color="#000",
-                                 hover_color="#DAE5F4", fg_color="#7F8CD9", cursor="hand2", command=sign_in)
+                                 text_color="#fff",
+                                 hover_color="#f4a024", fg_color="#294a70", cursor="hand2", command=sign_in)
     SearchButton.place(x=300, y=320, anchor=tk.CENTER)
 
     # Labels
     Labelemploi = ctk.CTkLabel(master=frameButtons_signIn, font=ButtonsFont, width=380, height=230,
-                               text="Emplois du temps", text_color="#000", fg_color="#DAE5F4",
+                               text="Emplois du temps", text_color="#000", fg_color="#a3d3f1",
                                bg_color="transparent", corner_radius=20, image=image_emploi,
                                compound="top")
     Labelemploi.place(x=100, y=20)
 
     LabelRelvgen = ctk.CTkLabel(master=frameButtons_signIn, font=ButtonsFont, width=380, height=230,
-                                text="Relevé général", text_color="#000", fg_color="#DAE5F4",
+                                text="Relevé général", text_color="#000", fg_color="#a3d3f1",
                                 bg_color="transparent", corner_radius=20, image=image_rlv_gen,
                                 compound="top")
     LabelRelvgen.place(x=100, y=300)
 
     # Buttons
     emploiButton = ctk.CTkButton(frameButtons_signIn, text="Télécharger", font=InputFont, width=55, height=30,
-                                 text_color="#000",
-                                 hover_color="#DAE5F4", fg_color="#7F8CD9", cursor="hand2",
+                                 text_color="#fff",
+                                 hover_color="#f4a024", fg_color="#294a70", cursor="hand2",
                                  command=lambda: Telecharger("emploi"))
     emploiButton.place(x=280, y=270, anchor=tk.CENTER)
 
     rlv_genButton = ctk.CTkButton(frameButtons_signIn, text="Télécharger", font=InputFont, width=55, height=30,
-                                  text_color="#000",
-                                  hover_color="#DAE5F4", fg_color="#7F8CD9", cursor="hand2",
+                                  text_color="#fff",
+                                  hover_color="#f4a024", fg_color="#294a70", cursor="hand2",
                                   command=lambda: Telecharger("rlv_gen"))
 
     rlv_genButton.place(x=280, y=550, anchor=tk.CENTER)
