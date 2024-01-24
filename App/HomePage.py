@@ -24,7 +24,7 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile=f"Relevé_perso_{prenom}_{nom}")
                 if pdf_output:
-                    if gn.generate_pdf_from_xquery_foo(xml_GINF2, xquery_rlv_note, pdf_output, id_etudiant):
+                    if gn.generate_pdf_from_xquery_fo(xml_GINF2, xquery_rlv_note, pdf_output, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Relevé personnel téléchargé !")
                         os.system(f'start {pdf_output}')
             case "att_sco":
@@ -32,7 +32,7 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile=f"Attestation_scolarité_{prenom}_{nom}")
                 if pdf_output:
-                    if gn.generate_pdf_from_xquery_foo(xml_GINF2, xquery_att_sco, pdf_output, id_etudiant):
+                    if gn.generate_pdf_from_xquery_fo(xml_GINF2, xquery_att_sco, pdf_output, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Attestation de scolarité téléchargé !")
                         os.system(f'start {pdf_output}')
             case "att_reuss":
@@ -77,7 +77,7 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
 
     # Logout button
     image_logout = ctk.CTkImage(light_image=Image.open("./Images/logout.png"), size=(33, 36))
-    image_logout_button = ctk.CTkButton(master=frameHome, font=ButtonsFont, width=40, height=40,text="",
+    image_logout_button = ctk.CTkButton(master=frameHome, font=ButtonsFont, width=40, height=40, text="",
                                         hover_color="#f4a024", fg_color="#294a70", cursor="hand2",
                                         bg_color="transparent", corner_radius=20, image=image_logout,
                                         command=logout)

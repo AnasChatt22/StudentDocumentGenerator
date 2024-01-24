@@ -39,7 +39,7 @@
                     .type-TD {
                     background-color: #ffffaa; /* Light Yellow for TD */
                     }
-                    #legend {
+                    .legend {
                     margin-top: 20px;
                     text-align: center;
                     }
@@ -226,7 +226,7 @@
                 <th>18:00</th>
             </tr>
         </table>
-        <div id="legend">
+        <div class="legend">
             <div class="legend-item">
                 <div class="color-square" style="background-color: #ddaaff;"/>
                 <div class="legend-text">Cours</div>
@@ -244,7 +244,7 @@
                 <div class="legend-text">DS</div>
             </div>
         </div>
-        <div id="legend">
+        <div class="legend">
             <div class="legend-item">
                 <div class="color-square" style="background-color: #ffbb5c;"/>
                 <div class="legend-text">Projet</div>
