@@ -1,5 +1,4 @@
 import random
-import traceback
 import xml.dom.minidom
 import xml.etree.ElementTree as ET
 
@@ -110,19 +109,24 @@ def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
 
         print("Fichier GINF2.xml créé avec succès")
     except Exception as ex:
-        traceback_str = traceback.format_exc()
-        print(f"Erreur de création du fichier GINF2.xml: {ex}\n{traceback_str}")
+        print(f"Erreur de création du fichier GINF2.xml: {ex}")
 
 
 def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
+    semaine_element = ""
+    jour_element = ""
+    designation = ""
+
     try:
         read_xl_emplois = pd.ExcelFile(Excel_Path_Emplois)
         read_xl_module = pd.read_excel(Excel_Path_Modules)
 
         xml_doc = ET.Element("Mi-semestres")
+        # Inisialisation du compteur de feuilles excel
         j = 0
 
         for sheet in read_xl_emplois.sheet_names:
+            # Incrémentation vers la seconde feuille excel
             j += 1
             mi_semestre_element = ET.SubElement(xml_doc, "Mi_semestre", numero=str(j))
             sheet_data = pd.read_excel(read_xl_emplois, sheet)
@@ -130,20 +134,20 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
             for _, row in sheet_data.iterrows():
                 if pd.isna(row['salle']) or pd.isna(row['professeur']) or pd.isna(row['type']):
                     continue
-                else:
-                    salle = row['salle']
-                    professeur = row['professeur']
-                    seance_type = row['type']
+
+                salle = row['salle']
+                professeur = row['professeur']
+                seance_type = row['type']
 
                 if pd.isna(row['id_matiere']):
                     designation = ""
-                else:
-                    for _, row_module in read_xl_module.iterrows():
-                        for i in range(1, 4):
-                            if pd.notna(row_module[f'id_matiere_{i}']):
-                                if row_module[f'id_matiere_{i}'] == row['id_matiere']:
-                                    designation = row_module[f'designation_matiere_{i}']
-                                    break
+
+                for _, row_module in read_xl_module.iterrows():
+                    for i in range(1, 4):
+                        if pd.notna(row_module[f'id_matiere_{i}']):
+                            if row_module[f'id_matiere_{i}'] == row['id_matiere']:
+                                designation = row_module[f'designation_matiere_{i}']
+                                break
 
                 if not pd.isna(row['premiere_semaine']):
                     semaine_element = ET.SubElement(mi_semestre_element, "Semaine",
@@ -174,15 +178,14 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
         print(f"Erreur de création du fichier Emploi.xml: {ex}")
 
 
-if __name__ == "__main__":
-    # Example usage
-    etudiant_xl_path = "../FichiersExcel/Etudiants.xlsx"
-    modules_xl_path = "../FichiersExcel/Modules.xlsx"
-    emploi_xl_path = "../FichiersExcel/Emplois.xlsx"
+# Example usage
+etudiant_xl_path = "../FichiersExcel/Etudiants.xlsx"
+modules_xl_path = "../FichiersExcel/Modules.xlsx"
+emploi_xl_path = "../FichiersExcel/Emplois.xlsx"
 
-    xml_path_GINF2 = "../FichiersXML/XML/GINF2.xml"
-    xml_path_Emploi = "../FichiersXML/XML/Emploi.xml"
+xml_path_GINF2 = "../FichiersXML/XML/GINF2.xml"
+xml_path_Emploi = "../FichiersXML/XML/Emploi.xml"
 
-    # Call the function with the specified Excel and XML file paths
-    # Creer_xml_GINF2(etudiant_xl_path, modules_xl_path, xml_path_GINF2)
-    Creer_xml_Emploi(emploi_xl_path, modules_xl_path, xml_path_Emploi)
+# test des fonctions
+# Creer_xml_GINF2(etudiant_xl_path, modules_xl_path, xml_path_GINF2)
+# Creer_xml_Emploi(emploi_xl_path, modules_xl_path, xml_path_Emploi)

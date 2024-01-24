@@ -25,7 +25,7 @@ def generate_html_from_xquery(xquery_data, xquery, html_output, id_etudiant):
         print("html generated successfully.")
 
 
-def generate_pdf_from_xquery_foo(xml_file, xquery_foo, output_pdf, id_etudiant):
+def generate_pdf_from_xquery_fo(xml_file, xquery_foo, output_pdf, id_etudiant):
     temp = "../FichiersXML/XML/temp.fo"
 
     try:
@@ -82,7 +82,7 @@ def generate_html_from_xslt(xml_file, xslt_file, output_html_file, id_etudiant=N
         print(f"Erreur : {ex}")
 
 
-def generate_pdf_from_html(html_file, output_pdf, options=None):
+def generate_pdf_from_html(html_file, output_pdf, Options=None):
     try:
         # Spécifiez le chemin complet de wkhtmltopdf ici
         wkhtmltopdf_path = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
@@ -91,7 +91,7 @@ def generate_pdf_from_html(html_file, output_pdf, options=None):
         config = pdf.configuration(wkhtmltopdf=wkhtmltopdf_path)
 
         # Utilisez la configuration lors de la conversion
-        if pdf.from_file(html_file, output_pdf, configuration=config, options=options):
+        if pdf.from_file(html_file, output_pdf, configuration=config, options=Options):
             print("Fichier PDF générer avec succès")
             return True
         else:
@@ -100,7 +100,7 @@ def generate_pdf_from_html(html_file, output_pdf, options=None):
         print(f"Erreur :{ex}")
 
 
-def generate_pdf_from_xslt(xml_file, xslt_file, output_pdf, options, id_etudiant=None):
+def generate_pdf_from_xslt(xml_file, xslt_file, output_pdf, Options, id_etudiant=None):
     try:
         # Load XML and XSLT files
         xml_tree = etree.parse(xml_file)
@@ -125,7 +125,7 @@ def generate_pdf_from_xslt(xml_file, xslt_file, output_pdf, options, id_etudiant
         config = pdf.configuration(wkhtmltopdf=wkhtmltopdf_path)
 
         # Convert HTML to PDF using the temporary HTML file
-        if pdf.from_string(html_content, output_pdf, configuration=config, options=options):
+        if pdf.from_string(html_content, output_pdf, configuration=config, options=Options):
             print("Fichier PDF créé avec succès")
             return True
         else:
@@ -141,7 +141,7 @@ xml_emploi_path = "../FichiersXML/XML/Emploi.xml"
 # XSLT
 xslt_carteEtd_path = "../FichiersXML/XSLT/CarteEtd.xsl"
 xslt_att_reuss_path = "../FichiersXML/XSLT/Attestation_reussite.xsl"
-xslt_EmploisAll_path = "../FichiersXML/XSLT/EmploisAll.xsl"
+xslt_EmploisAll_path = "../FichiersXML/XSLT/Emplois.xsl"
 xslt_rlv_gen_path = "../FichiersXML/XSLT/releve_general.xsl"
 
 # Xquery
@@ -153,20 +153,19 @@ Xquery_att_sco_html = "../FichiersXML/Xquery/attestation.xquery"
 # HTML
 output_html_carteEtd_path = "../FichiersHTML/CarteEtd.html"
 output_html_attReuss_path = "../FichiersHTML/Attestation_reussite.html"
-output_html_AllEmp_path = "../FichiersHTML/EmploisAll.html"
+output_html_AllEmp_path = "../FichiersHTML/Emplois.html"
 output_html_rlv_perso = "../FichiersHTML/Releve_perso.html"
 output_html_att_sco = "../FichiersHTML/Attestation_scolarite.html"
 output_html_rlv_gen = "../FichiersHTML/Releve_general.html"
 
 # PDF
 output_pdf_attReuss_path = "../FichiersPDF/Attestation_reussite.pdf"
-output_pdf_AllEmp_path = "../FichiersPDF/EmploisAll.pdf"
+output_pdf_AllEmp_path = "../FichiersPDF/Emplois.pdf"
 output_pdf_CarteEtd = "../FichiersPDF/CarteEtd.pdf"
 output_pdf_rlv_preso = "../FichiersPDF/Releve_perso.pdf"
 output_pdf_att_sco = "../FichiersPDF/Attestation_scolarite.pdf"
 output_pdf_rlv_gen = "../FichiersPDF/Releve_general.pdf"
 
-# generate_html_from_xslt(xml_ginf2_path, xslt_rlv_gen_path, output_html_rlv_gen)
 options = {
     'quiet': '',
     'encoding': 'utf-8',

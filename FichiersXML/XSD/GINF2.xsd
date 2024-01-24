@@ -6,30 +6,33 @@
                <xs:element name="Etudiant" minOccurs="1" maxOccurs="unbounded">
                    <xs:complexType>
                        <xs:sequence>
-                           <xs:element name="Nom" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
-                           <xs:element name="Prenom" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
-                           <xs:element name="Email" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
+                           <xs:element name="Nom" type="xs:string" maxOccurs="1" minOccurs="1"/>
+                           <xs:element name="Prenom" type="xs:string" maxOccurs="1" minOccurs="1"/>
+                           <xs:element name="Email" type="xs:string" maxOccurs="1" minOccurs="1"/>
                            <xs:element name="Module"  maxOccurs="unbounded" minOccurs="1">
                                <xs:complexType>
                                    <xs:sequence>
-                                       <xs:element name="Designation" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
-                                       <xs:element name="Responsable" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
-                                       <xs:element name="Semestre" type="xs:positiveInteger" maxOccurs="1" minOccurs="1"></xs:element>
+                                       <xs:element name="Designation" type="xs:string" maxOccurs="1" minOccurs="1"/>
+                                       <xs:element name="Responsable" type="xs:string" maxOccurs="1" minOccurs="1"/>
+                                       <xs:element name="Semestre" type="xs:positiveInteger" maxOccurs="1"
+                                                   minOccurs="1"/>
                                        <xs:element name="Matiere"  maxOccurs="unbounded" minOccurs="1">
                                            <xs:complexType>
                                                <xs:sequence>
-                                                   <xs:element name="Designation" type="xs:string" maxOccurs="1" minOccurs="1"></xs:element>
-                                                   <xs:element name="Note" type="xs:double"  maxOccurs="1" minOccurs="1"></xs:element>
+                                                   <xs:element name="Designation" type="xs:string" maxOccurs="1"
+                                                               minOccurs="1"/>
+                                                   <xs:element name="Note" type="xs:double" maxOccurs="1"
+                                                               minOccurs="1"/>
                                                </xs:sequence>
-                                               <xs:attribute name="id_matiere" type="xs:string" ></xs:attribute>
+                                               <xs:attribute name="id_matiere" type="xs:string"/>
                                            </xs:complexType>
                                        </xs:element>
                                    </xs:sequence>
-                                   <xs:attribute name="id_module" type="xs:string" ></xs:attribute>
+                                   <xs:attribute name="id_module" type="xs:string"/>
                                </xs:complexType>
                            </xs:element>
                        </xs:sequence>
-                       <xs:attribute name="id_etudiant" type="xs:positiveInteger" ></xs:attribute>
+                       <xs:attribute name="id_etudiant" type="xs:positiveInteger"/>
                        <xs:attribute name="sexe" >
                            <xs:simpleType>
                                <xs:restriction base="xs:string">
@@ -38,7 +41,7 @@
                                </xs:restriction>
                            </xs:simpleType>
                        </xs:attribute>
-                       <xs:attribute name="date_naissance" type="xs:date"></xs:attribute>
+                       <xs:attribute name="date_naissance" type="xs:date"/>
                    </xs:complexType>
                </xs:element>
            </xs:sequence>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="Mi-semestres">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="Mi_semestre"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Mi_semestre">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Semaine"/>
+            </xs:sequence>
+            <xs:attribute name="numero" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Semaine">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="Jour"/>
+            </xs:sequence>
+            <xs:attribute name="Derniere" use="required" type="xs:integer"/>
+            <xs:attribute name="Premiere" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Jour">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="Seance"/>
+            </xs:sequence>
+            <xs:attribute name="nom" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Seance">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Matière"/>
+            </xs:sequence>
+            <xs:attribute name="debut" use="required" type="xs:NMTOKEN"/>
+            <xs:attribute name="fin" use="required" type="xs:NMTOKEN"/>
+            <xs:attribute name="type" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Matière">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Designation"/>
+                <xs:element ref="Professeur"/>
+                <xs:element ref="Salle"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Designation" type="xs:string"/>
+    <xs:element name="Professeur" type="xs:string"/>
+    <xs:element name="Salle" type="xs:NCName"/>
+</xs:schema>

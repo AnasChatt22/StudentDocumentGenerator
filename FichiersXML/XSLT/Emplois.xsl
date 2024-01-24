@@ -137,7 +137,7 @@
             <tr>
                 <th>13:00</th>
                 <xsl:for-each select="Semaine/Jour">
-                    <th></th>
+                    <th/>
                 </xsl:for-each>
             </tr>
             <tr>
@@ -197,7 +197,6 @@
                     </xsl:if>
                 </xsl:for-each>
             </tr>
-
             <tr>
                 <th>16:00</th>
             </tr>
@@ -244,7 +243,6 @@
                 <div class="color-square" style="background-color: #ffb9a2;"/>
                 <div class="legend-text">DS</div>
             </div>
-            <!-- Ajoutez d'autres éléments de légende au besoin -->
         </div>
         <div id="legend">
             <div class="legend-item">

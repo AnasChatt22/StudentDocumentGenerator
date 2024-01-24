@@ -6,7 +6,7 @@ from tkinter import messagebox, filedialog
 import customtkinter as ctk
 from PIL import Image
 
-import Generation.generate as gn
+import Generation.Generate as gn
 import HomePage as hp
 
 
@@ -30,7 +30,7 @@ def SignIn(root):
                     'page-height': '835px'
                 }
                 xml_emploi = "../FichiersXML/XML/Emploi.xml"
-                xsl_emploi = "../FichiersXML/XSLT/EmploisAll.xsl"
+                xsl_emploi = "../FichiersXML/XSLT/Emplois.xsl"
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile="EmploisGINF2")
                 if pdf_output:

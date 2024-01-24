@@ -5,7 +5,7 @@ from tkinter import filedialog, messagebox
 import customtkinter as ctk
 from PIL import Image
 
-import Generation.generate as gn
+import Generation.Generate as gn
 import SignIn as si
 
 
