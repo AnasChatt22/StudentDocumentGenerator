@@ -1,5 +1,5 @@
 import random
-import xml.dom.minidom
+from xml.dom import minidom
 import xml.etree.ElementTree as ET
 
 import pandas as pd
@@ -100,7 +100,7 @@ def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
 
         # Format XML file
         xml_string = ET.tostring(xml_doc, encoding="UTF-8")
-        dom = xml.dom.minidom.parseString(xml_string)
+        dom = minidom.parseString(xml_string)
         prettified_xml = dom.toprettyxml(indent="    ")
 
         # Create XML File
@@ -166,7 +166,7 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
 
         # Format xml file
         xml_string = ET.tostring(xml_doc, encoding="UTF-8")
-        dom = xml.dom.minidom.parseString(xml_string)
+        dom = minidom.parseString(xml_string)
         prettified_xml = dom.toprettyxml(indent="    ")
 
         # Create XML File

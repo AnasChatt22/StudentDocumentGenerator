@@ -2,26 +2,28 @@ import os
 import subprocess
 
 import pdfkit as pdf
+from bs4 import BeautifulSoup
 from lxml import etree
 
 
-def generate_html_from_xquery(xquery_data, xquery, html_output, id_etudiant):
+def generate_html_from_xquery(xml_file, xquery_file, output_html_file, id_etudiant):
     process = subprocess.Popen(
-        ['basex', "-i", xquery_data, "-b", f'idEtudiant={id_etudiant}', xquery, "-o", html_output],
-        stdout=subprocess.PIPE,
-        stdin=subprocess.PIPE,
-        shell=True)
+        ['basex', "-i", xml_file, "-b", f'idEtudiant={id_etudiant}', xquery_file, "-o", output_html_file],
+        stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell=True)
     output, err = process.communicate()
     process.wait()
     if process.returncode != 0:
         print(output)
-
     else:
-        with open(html_output, "w", encoding='utf-8') as output_file:
-            output_file.write(output.decode('utf-8'))
+        # Format html file
+        soup = BeautifulSoup(output.decode('utf-8'), 'html.parser')
+        formatted_html = soup.prettify()
+
+        with open(output_html_file, "w", encoding='utf-8') as output_file:
+            output_file.write(formatted_html)
 
         # Convert XSL-FO to PDF using Apache FOP
-        print("html generated successfully.")
+        print("Fichier HTML généré avec succès (En utilisant XQuery).")
 
 
 def generate_html_from_xslt(xml_file, xslt_file, output_html_file, id_etudiant=None):
@@ -39,11 +41,14 @@ def generate_html_from_xslt(xml_file, xslt_file, output_html_file, id_etudiant=N
         else:
             result_tree = transform(xml_tree)
 
+        # Format html file
+        soup = BeautifulSoup(str(result_tree), 'html.parser')
+        formatted_html = soup.prettify()
         # Output the result to an HTML file with explicit UTF-8 encoding
-        with open(output_html_file, 'w', encoding='utf-8') as html_file:
-            html_file.write(str(result_tree, encoding='utf-8'))
+        with open(output_html_file, 'w', encoding='utf-8') as output_file:
+            output_file.write(formatted_html)
 
-        print("Fichier html créé avec succès")
+        print("Fichier HTML généré avec succès (En utilisant XSLT).")
     except Exception as ex:
         print(f"Erreur : {ex}")
 
@@ -58,7 +63,7 @@ def generate_pdf_from_html(html_file, output_pdf, Options=None):
 
         # Utilisez la configuration lors de la conversion
         if pdf.from_file(html_file, output_pdf, configuration=config, options=Options):
-            print("Fichier PDF générer avec succès")
+            print("Fichier PDF généré avec succès (En utilisant HTML).")
             return True
         else:
             return False
@@ -92,7 +97,7 @@ def generate_pdf_from_xquery_fo(xml_file, xquery_foo, output_pdf, id_etudiant):
 
         os.remove(temp)
 
-        print("PDF generated successfully.")
+        print("Fichier PDF généré avec succès (En utilisant XQuery-FO).")
         return True
     except Exception as e:
         print(f"An error occurred: {str(e)}")
@@ -180,5 +185,7 @@ options = {
     'page-height': '835px'
 }
 
-# generate_html_from_xslt(xml_emploi, xslt_Emplois, output_html_Emplois)
-generate_pdf_from_xslt(xml_emploi, xslt_Emplois, output_pdf_Emplois, Options=options)
+generate_html_from_xslt(xml_emploi, xslt_Emplois, output_html_Emplois)
+generate_html_from_xquery(xml_ginf2, Xquery_att_sco_html, output_html_att_sco, 20000493)
+
+# generate_pdf_from_xslt(xml_emploi, xslt_Emplois, output_pdf_Emplois, Options=options)

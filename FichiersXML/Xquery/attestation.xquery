@@ -83,7 +83,6 @@ declare variable $idEtudiant external;
         <div style="display:flex;flex-direction:column;text-align :center;margin:0 auto;margin-bottom:40px;">
              <h2 style="display:inline-block; ">Le présent document n'est déliveré qu'en un seul exemplaire .</h2>
              <h2 style="display:inline-block; ">Il appartient à l'étudiant d'en faire des photocopies certifiées conformes.</h2>
-
       </div>
        </div>
 
