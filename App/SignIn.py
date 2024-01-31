@@ -31,13 +31,15 @@ def SignIn(root):
                     'page-height': '835px'
                 }
                 xml_emploi = "../FichiersXML/XML/Emploi.xml"
-                xsl_emploi = "../FichiersXML/XSLT/Emplois.xsl"
+                xsl_emploi = "../FichiersXML/XSLT/Emploi.xsl"
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile="EmploisGINF2")
                 if pdf_output:
                     if gn.generate_pdf_from_xslt(xml_emploi, xsl_emploi, pdf_output, options):
                         messagebox.showinfo("Info de Téléchargement", "Emploi du temps téléchargé avec succès !")
                         os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "rlv_gen":
                 options = {
                     'quiet': '',
@@ -53,7 +55,9 @@ def SignIn(root):
                     if gn.generate_pdf_from_xslt(xml_rlv_gen, xsl_rlv_gen, pdf_output, options):
                         messagebox.showinfo("Info de Téléchargement",
                                             "Relevé général de notes téléchargé avec succès !")
-                    os.system(f'start {pdf_output}')
+                        os.system(f'start {pdf_output}')
+                else:
+                    messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
 
     def sign_in():
         if len(id_etd_input.get()) == 0:

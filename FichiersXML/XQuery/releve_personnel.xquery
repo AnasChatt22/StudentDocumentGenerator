@@ -44,7 +44,7 @@ declare variable $idEtudiant external;
                  <h2 style="font-weight:200">Né le  : { $Etudiant/@date_naissance/string()}</h2>
              </div>
            </div>
-           <table border="1" style="width:100%;border:1px solid black;border-collapse: :collapse">
+           <table border="1" style="width:100%;border:1px solid black;border-collapse:collapse">
            <tr >
             <th>Modules</th>
             <th>Note/Barème</th>
@@ -74,7 +74,7 @@ declare variable $idEtudiant external;
                      </td>
                      {if ($moy >= 12)
                       then
-                     <td style="text-align:center;font-weight:600">ADMIoooS</td>
+                     <td style="text-align:center;font-weight:600">ADMIS</td>
                       else
                      <td style="text-align:center;font-weight:600">REFUSE</td>
                      }

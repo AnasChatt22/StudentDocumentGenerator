@@ -13,10 +13,8 @@ declare variable $idEtudiant external;
               <fo:block >
                 <fo:inline font-weight="bold" text-align="center">Université Abdelmalek Essaadi</fo:inline>
               </fo:block>
-
               <fo:block font-weight="200">Année universitaire 2023/2024 </fo:block>
             </fo:block-container>
-
             <fo:block-container text-align="center">
               <fo:block margin="12px auto" text-align="center">
                 <fo:inline font-weight="bold" text-align="center">Ecole Nationale Des Sciences Appliquées de Tanger</fo:inline>
@@ -78,7 +76,6 @@ declare variable $idEtudiant external;
                 <fo:table-cell padding="6px" background-color="{if ($moy >= 16) then '#33B2FF' else
                                                  if ($moy >= 14) then '#33FF36' else
                                                  if ($moy >= 12) then '#FFF933' else
-                                                 if ($moy >= 8) then '#FFA233' else
                                                  '#FF3333'}">
                     <fo:block>
                         {if ($moy >= 12) then 'ADMIS' else 'REFUSE'}

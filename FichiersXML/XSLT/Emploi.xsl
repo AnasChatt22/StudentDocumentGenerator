@@ -65,7 +65,7 @@
             </head>
             <body>
                 <center>
-                    <xsl:apply-templates select="//Mi_semestre"/>
+                    <xsl:apply-templates select="Mi_semestres/Mi_semestre"/>
                 </center>
             </body>
         </html>
@@ -78,7 +78,7 @@
         <table>
             <tr>
                 <th>Heures</th>
-                <xsl:for-each select="Semaine/Jour">
+                <xsl:for-each select="Jour">
                     <th>
                         <xsl:value-of select="@nom"/>
                     </th>
@@ -86,16 +86,18 @@
             </tr>
             <tr>
                 <th>9:00</th>
-                <xsl:for-each select="Semaine/Jour">
+                <xsl:for-each select="Jour">
                     <xsl:for-each select="Seance[contains(@debut, '9:00') and contains(@fin, '10:30')]">
                         <td rowspan="4" class="type-{@type}">
-                            <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            <b>
+                                <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            </b>
                             <br/>
-                            <xsl:value-of select="Matière/Designation"/>
+                            <xsl:value-of select="Matiere/Designation"/>
                             <br/>
-                            <xsl:value-of select="Matière/Professeur"/>
+                            <xsl:value-of select="Matiere/Professeur"/>
                             <br/>
-                            <xsl:value-of select="Matière/Salle"/>
+                            <xsl:value-of select="Matiere/Salle"/>
                         </td>
                     </xsl:for-each>
                 </xsl:for-each>
@@ -111,16 +113,18 @@
             </tr>
             <tr>
                 <th>11:00</th>
-                <xsl:for-each select="Semaine/Jour">
+                <xsl:for-each select="Jour">
                     <xsl:for-each select="Seance[contains(@debut, '11:00') and contains(@fin, '12:30')]">
                         <td rowspan="4" class="type-{@type}">
-                            <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            <b>
+                                <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            </b>
                             <br/>
-                            <xsl:value-of select="Matière/Designation"/>
+                            <xsl:value-of select="Matiere/Designation"/>
                             <br/>
-                            <xsl:value-of select="Matière/Professeur"/>
+                            <xsl:value-of select="Matiere/Professeur"/>
                             <br/>
-                            <xsl:value-of select="Matière/Salle"/>
+                            <xsl:value-of select="Matiere/Salle"/>
                         </td>
                     </xsl:for-each>
                 </xsl:for-each>
@@ -136,22 +140,24 @@
             </tr>
             <tr>
                 <th>13:00</th>
-                <xsl:for-each select="Semaine/Jour">
+                <xsl:for-each select="Jour">
                     <th/>
                 </xsl:for-each>
             </tr>
             <tr>
                 <th>13:30</th>
-                <xsl:for-each select="Semaine/Jour">
+                <xsl:for-each select="Jour">
                     <xsl:for-each select="Seance[contains(@debut, '13:30') and contains(@fin, '15:00')]">
                         <td rowspan="4" class="type-{@type}">
-                            <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            <b>
+                                <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            </b>
                             <br/>
-                            <xsl:value-of select="Matière/Designation"/>
+                            <xsl:value-of select="Matiere/Designation"/>
                             <br/>
-                            <xsl:value-of select="Matière/Professeur"/>
+                            <xsl:value-of select="Matiere/Professeur"/>
                             <br/>
-                            <xsl:value-of select="Matière/Salle"/>
+                            <xsl:value-of select="Matiere/Salle"/>
                         </td>
                     </xsl:for-each>
                 </xsl:for-each>
@@ -161,16 +167,18 @@
             </tr>
             <tr>
                 <th>14:30</th>
-                <xsl:for-each select="Semaine/Jour">
+                <xsl:for-each select="Jour">
                     <xsl:for-each select="Seance[contains(@debut, '14:30') and contains(@fin, '16:00')]">
                         <td rowspan="4" class="type-{@type}">
-                            <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            <b>
+                                <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            </b>
                             <br/>
-                            <xsl:value-of select="Matière/Designation"/>
+                            <xsl:value-of select="Matiere/Designation"/>
                             <br/>
-                            <xsl:value-of select="Matière/Professeur"/>
+                            <xsl:value-of select="Matiere/Professeur"/>
                             <br/>
-                            <xsl:value-of select="Matière/Salle"/>
+                            <xsl:value-of select="Matiere/Salle"/>
                         </td>
                     </xsl:for-each>
                 </xsl:for-each>
@@ -180,21 +188,21 @@
             </tr>
             <tr>
                 <th>15:30</th>
-                <xsl:for-each select="Semaine/Jour">
-                    <xsl:variable name="currentDay" select="@nom"/>
-                    <xsl:if test="Seance[contains(@debut, '15:30') and contains(@fin, '17:00')]">
-                        <xsl:for-each select="Seance[contains(@debut, '15:30') and contains(@fin, '17:00')]">
-                            <td rowspan="4" class="type-{@type}">
-                                <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
-                                <br/>
-                                <xsl:value-of select="Matière/Designation"/>
-                                <br/>
-                                <xsl:value-of select="Matière/Professeur"/>
-                                <br/>
-                                <xsl:value-of select="Matière/Salle"/>
-                            </td>
-                        </xsl:for-each>
-                    </xsl:if>
+                <xsl:for-each select="Jour">
+                    <xsl:for-each select="Seance[contains(@debut, '15:30') and contains(@fin, '17:00')]">
+                        <td rowspan="4" class="type-{@type}">
+                            <b>
+                                <xsl:value-of
+                                        select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            </b>
+                            <br/>
+                            <xsl:value-of select="Matiere/Designation"/>
+                            <br/>
+                            <xsl:value-of select="Matiere/Professeur"/>
+                            <br/>
+                            <xsl:value-of select="Matiere/Salle"/>
+                        </td>
+                    </xsl:for-each>
                 </xsl:for-each>
             </tr>
             <tr>
@@ -202,16 +210,18 @@
             </tr>
             <tr>
                 <th>16:30</th>
-                <xsl:for-each select="Semaine/Jour">
+                <xsl:for-each select="Jour">
                     <xsl:for-each select="Seance[contains(@debut, '16:30') and contains(@fin, '18:00')]">
                         <td rowspan="4" class="type-{@type}">
-                            <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            <b>
+                                <xsl:value-of select="concat(substring(@debut, 1, 5), ' - ', substring(@fin, 1, 5))"/>
+                            </b>
                             <br/>
-                            <xsl:value-of select="Matière/Designation"/>
+                            <xsl:value-of select="Matiere/Designation"/>
                             <br/>
-                            <xsl:value-of select="Matière/Professeur"/>
+                            <xsl:value-of select="Matiere/Professeur"/>
                             <br/>
-                            <xsl:value-of select="Matière/Salle"/>
+                            <xsl:value-of select="Matiere/Salle"/>
                         </td>
                     </xsl:for-each>
                 </xsl:for-each>

@@ -24,17 +24,21 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile=f"Relevé_perso_{prenom}_{nom}")
                 if pdf_output:
-                    if gn.generate_pdf_from_xquery_fo(xml_GINF2, xquery_rlv_note, pdf_output, id_etudiant):
+                    if gn.generate_pdf_from_xquery(xml_GINF2, xquery_rlv_note, pdf_output, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Relevé personnel téléchargé !")
                         os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "att_sco":
-                xquery_att_sco = "../FichiersXML/FO/attestation_pdf.xquery"
+                xquery_att_sco = "../FichiersXML/FO/attestation_sco_pdf.xquery"
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile=f"Attestation_scolarité_{prenom}_{nom}")
                 if pdf_output:
-                    if gn.generate_pdf_from_xquery_fo(xml_GINF2, xquery_att_sco, pdf_output, id_etudiant):
+                    if gn.generate_pdf_from_xquery(xml_GINF2, xquery_att_sco, pdf_output, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Attestation de scolarité téléchargé !")
                         os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "att_reuss":
                 options = {
                     'quiet': '',
@@ -50,6 +54,8 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                         if gn.generate_pdf_from_xslt(xml_GINF2, xsl_att_reuss, pdf_output, options, id_etudiant):
                             messagebox.showinfo("Info de Téléchargement", "Attestation de réussite téléchargée !")
                             os.system(f'start {pdf_output}')
+                        else:
+                            messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "carte_etd":
                 options = {
                     'quiet': '',
@@ -61,7 +67,9 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                 if pdf_output:
                     if gn.generate_pdf_from_xslt(xml_GINF2, xsl_carte_etd, pdf_output, options, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Carte d'étudiant téléchargée !")
-                    os.system(f'start {pdf_output}')
+                        os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
 
     # Fonts
     ButtonsFont = ctk.CTkFont(family="Microsoft YaHei UI Light", size=16, weight="bold")

@@ -1,577 +1,569 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Mi-semestres>
-    <Mi_semestre numero="1">
-        <Semaine Premiere="1" Derniere="9">
-            <Jour nom="Lundi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Modélisation orientée objet UML</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Modélisation orientée objet UML</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>Maitrise et optimisation des processus</Designation>
-                        <Professeur>RAHALI EL AZZOUZI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="Cours">
-                    <Matière>
-                        <Designation>Maitrise et optimisation des processus</Designation>
-                        <Professeur>RAHALI EL AZZOUZI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mardi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Optimisation et qualité de base de données</Designation>
-                        <Professeur>FISSOUNE</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="TD">
-                    <Matière>
-                        <Designation>Optimisation et qualité de base de données</Designation>
-                        <Professeur>FISSOUNE</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="TP">
-                    <Matière>
-                        <Designation>Administration systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TP">
-                    <Matière>
-                        <Designation>Administration systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mercredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Programmation orienté objet : Java</Designation>
-                        <Professeur>EL HADDAD</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Programmation orienté objet : Java</Designation>
-                        <Professeur>EL HADDAD</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="TP">
-                    <Matière>
-                        <Designation>Administration systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B6</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TP">
-                    <Matière>
-                        <Designation>Administration systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B6</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Jeudi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Administration et securité des Base de données</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="TD">
-                    <Matière>
-                        <Designation>Administration et securité des Base de données</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>Espagnol</Designation>
-                        <Professeur>LAAMARTI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="Cours">
-                    <Matière>
-                        <Designation>Administration systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Vendredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>XML</Designation>
-                        <Professeur>LACHKAR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="TP">
-                    <Matière>
-                        <Designation>XML</Designation>
-                        <Professeur>LACHKAR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="14:30" fin="16:00" type="Cours">
-                    <Matière>
-                        <Designation>Anglais professionnel</Designation>
-                        <Professeur>BOURIGUI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="16:30" fin="18:00" type="Cours">
-                    <Matière>
-                        <Designation>Anglais professionnel</Designation>
-                        <Professeur>BOURIGUI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-        </Semaine>
+<?xml version="1.0" ?>
+<Mi_semestres>
+    <Mi_semestre numero="1" premiere_semaine="1" derniere_semaine="9">
+        <Jour nom="Lundi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Modélisation orientée objet UML</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Modélisation orientée objet UML</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>Maitrise et optimisation des processus</Designation>
+                    <Professeur>RAHALI EL AZZOUZI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="Cours">
+                <Matiere>
+                    <Designation>Maitrise et optimisation des processus</Designation>
+                    <Professeur>RAHALI EL AZZOUZI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mardi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Optimisation et qualité de base de données</Designation>
+                    <Professeur>FISSOUNE</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="TD">
+                <Matiere>
+                    <Designation>Optimisation et qualité de base de données</Designation>
+                    <Professeur>FISSOUNE</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="TP">
+                <Matiere>
+                    <Designation>Administration systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TP">
+                <Matiere>
+                    <Designation>Administration systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mercredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Programmation orienté objet : Java</Designation>
+                    <Professeur>EL HADDAD</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Programmation orienté objet : Java</Designation>
+                    <Professeur>EL HADDAD</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="TP">
+                <Matiere>
+                    <Designation>Administration systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B6</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TP">
+                <Matiere>
+                    <Designation>Administration systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B6</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Jeudi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Administration et securité des Base de données</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="TD">
+                <Matiere>
+                    <Designation>Administration et securité des Base de données</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>Espagnol </Designation>
+                    <Professeur>LAAMARTI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="Cours">
+                <Matiere>
+                    <Designation>Administration systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Vendredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>XML</Designation>
+                    <Professeur>LACHKAR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="TP">
+                <Matiere>
+                    <Designation>XML</Designation>
+                    <Professeur>LACHKAR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="14:30" fin="16:00" type="Cours">
+                <Matiere>
+                    <Designation>Anglais professionnel</Designation>
+                    <Professeur>BOURIGUI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="16:30" fin="18:00" type="Cours">
+                <Matiere>
+                    <Designation>Anglais professionnel</Designation>
+                    <Professeur>BOURIGUI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
     </Mi_semestre>
-    <Mi_semestre numero="2">
-        <Semaine Premiere="10" Derniere="18">
-            <Jour nom="Lundi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Modélisation orientée objet UML</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Modélisation orientée objet UML</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>IHM</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TD">
-                    <Matière>
-                        <Designation>IHM</Designation>
-                        <Professeur>SBAYTRI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mardi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Optimisation et qualité de base de données</Designation>
-                        <Professeur>FISSOUNE</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="TD">
-                    <Matière>
-                        <Designation>Optimisation et qualité de base de données</Designation>
-                        <Professeur>FISSOUNE</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="TP">
-                    <Matière>
-                        <Designation>Programmation systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mercredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Programmation orienté objet : Java</Designation>
-                        <Professeur>EL HADDAD</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Programmation orienté objet : Java</Designation>
-                        <Professeur>EL HADDAD</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>Programmation systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TP">
-                    <Matière>
-                        <Designation>Programmation systèmes</Designation>
-                        <Professeur>AMECHNOUE</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Jeudi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Cycle de Vie Logiciel et Méthodes agiles</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Cycle de Vie Logiciel et Méthodes agiles</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>Technique de communication</Designation>
-                        <Professeur>ZAAMOUMI</Professeur>
-                        <Salle>C1</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="Cours">
-                    <Matière>
-                        <Designation>Technique de communication</Designation>
-                        <Professeur>ZAAMOUMI</Professeur>
-                        <Salle>C1</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Vendredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Assurance contrôle qualité (ISO 9001)</Designation>
-                        <Professeur>CHICHI</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Assurance contrôle qualité (ISO 9001)</Designation>
-                        <Professeur>CHICHI</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="14:30" fin="16:00" type="Cours">
-                    <Matière>
-                        <Designation>Espagnol</Designation>
-                        <Professeur>LAAMARTI</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-        </Semaine>
+    <Mi_semestre numero="2" premiere_semaine="10" derniere_semaine="18">
+        <Jour nom="Lundi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Modélisation orientée objet UML</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Modélisation orientée objet UML</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>IHM</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TD">
+                <Matiere>
+                    <Designation>IHM</Designation>
+                    <Professeur>SBAYTRI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mardi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Optimisation et qualité de base de données</Designation>
+                    <Professeur>FISSOUNE</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="TD">
+                <Matiere>
+                    <Designation>Optimisation et qualité de base de données</Designation>
+                    <Professeur>FISSOUNE</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="TP">
+                <Matiere>
+                    <Designation>Programmation systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mercredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Programmation orienté objet : Java</Designation>
+                    <Professeur>EL HADDAD</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Programmation orienté objet : Java</Designation>
+                    <Professeur>EL HADDAD</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>Programmation systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TP">
+                <Matiere>
+                    <Designation>Programmation systèmes</Designation>
+                    <Professeur>AMECHNOUE</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Jeudi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Cycle de Vie Logiciel et Méthodes agiles</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Cycle de Vie Logiciel et Méthodes agiles</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>Technique de communication</Designation>
+                    <Professeur>ZAAMOUMI</Professeur>
+                    <Salle>C1</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="Cours">
+                <Matiere>
+                    <Designation>Technique de communication</Designation>
+                    <Professeur>ZAAMOUMI</Professeur>
+                    <Salle>C1</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Vendredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Assurance contrôle qualité (ISO 9001)</Designation>
+                    <Professeur>CHICHI</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Assurance contrôle qualité (ISO 9001)</Designation>
+                    <Professeur>CHICHI</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="14:30" fin="16:00" type="Cours">
+                <Matiere>
+                    <Designation>Espagnol </Designation>
+                    <Professeur>LAAMARTI</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
     </Mi_semestre>
-    <Mi_semestre numero="3">
-        <Semaine Premiere="19" Derniere="27">
-            <Jour nom="Lundi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Cryptographie</Designation>
-                        <Professeur>LAZAAR</Professeur>
-                        <Salle>A8</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Cryptographie</Designation>
-                        <Professeur>LAZAAR</Professeur>
-                        <Salle>A8</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>Base de données NoSQL</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="Cours">
-                    <Matière>
-                        <Designation>Base de données NoSQL</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mardi">
-                <Seance debut="09:00" fin="10:30" type="TP">
-                    <Matière>
-                        <Designation>Cryptographie</Designation>
-                        <Professeur>LAZAAR</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Programmation en C#</Designation>
-                        <Professeur>GHAILANI</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>Technique algorithmique avancé</Designation>
-                        <Professeur>MAOUEN</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TD">
-                    <Matière>
-                        <Designation>Technique algorithmique avancé</Designation>
-                        <Professeur>MAOUEN</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mercredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Economie et comptabilité 2</Designation>
-                        <Professeur>EDEBBAGH</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Economie et comptabilité 2</Designation>
-                        <Professeur>EDEBBAGH</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="TP">
-                    <Matière>
-                        <Designation>Management de projet</Designation>
-                        <Professeur>RAHALI EL AZZAOUZI</Professeur>
-                        <Salle>B21</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TP">
-                    <Matière>
-                        <Designation>Management de projet</Designation>
-                        <Professeur>RAHALI EL AZZAOUZI</Professeur>
-                        <Salle>B21</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Jeudi">
-                <Seance debut="09:00" fin="10:30" type="TP">
-                    <Matière>
-                        <Designation>Traitement d'image</Designation>
-                        <Professeur>LACHKAR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Traitement d'image</Designation>
-                        <Professeur>LACHKAR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="TP">
-                    <Matière>
-                        <Designation>Programmation en C#</Designation>
-                        <Professeur>GHAILANI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TP">
-                    <Matière>
-                        <Designation>Programmation en C#</Designation>
-                        <Professeur>GHAILANI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Vendredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Gestion des données distribuées</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Gestion des données distribuées</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="16:30" fin="18:00" type="TD">
-                    <Matière>
-                        <Designation>Technique algorithmique avancé</Designation>
-                        <Professeur>MAOUEN</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-        </Semaine>
+    <Mi_semestre numero="3" premiere_semaine="19" derniere_semaine="27">
+        <Jour nom="Lundi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Cryptographie</Designation>
+                    <Professeur>LAZAAR</Professeur>
+                    <Salle>A8</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Cryptographie</Designation>
+                    <Professeur>LAZAAR</Professeur>
+                    <Salle>A8</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>Base de données NoSQL</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="Cours">
+                <Matiere>
+                    <Designation>Base de données NoSQL</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mardi">
+            <Seance debut="09:00" fin="10:30" type="TP">
+                <Matiere>
+                    <Designation>Cryptographie</Designation>
+                    <Professeur>LAZAAR</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Programmation en C#</Designation>
+                    <Professeur>GHAILANI</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>Technique algorithmique avancé</Designation>
+                    <Professeur>MAOUEN</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TD">
+                <Matiere>
+                    <Designation>Technique algorithmique avancé</Designation>
+                    <Professeur>MAOUEN</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mercredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Economie et comptabilité 2</Designation>
+                    <Professeur>EDEBBAGH</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Economie et comptabilité 2</Designation>
+                    <Professeur>EDEBBAGH</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="TP">
+                <Matiere>
+                    <Designation>Management de projet</Designation>
+                    <Professeur>RAHALI EL AZZAOUZI</Professeur>
+                    <Salle>B21</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TP">
+                <Matiere>
+                    <Designation>Management de projet</Designation>
+                    <Professeur>RAHALI EL AZZAOUZI</Professeur>
+                    <Salle>B21</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Jeudi">
+            <Seance debut="09:00" fin="10:30" type="TP">
+                <Matiere>
+                    <Designation>Traitement d'image</Designation>
+                    <Professeur>LACHKAR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Traitement d'image</Designation>
+                    <Professeur>LACHKAR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="TP">
+                <Matiere>
+                    <Designation>Programmation en C#</Designation>
+                    <Professeur>GHAILANI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TP">
+                <Matiere>
+                    <Designation>Programmation en C#</Designation>
+                    <Professeur>GHAILANI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Vendredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Gestion des données distribuées</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Gestion des données distribuées</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="16:30" fin="18:00" type="TD">
+                <Matiere>
+                    <Designation>Technique algorithmique avancé</Designation>
+                    <Professeur>MAOUEN</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
     </Mi_semestre>
-    <Mi_semestre numero="4">
-        <Semaine Premiere="28" Derniere="34">
-            <Jour nom="Lundi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Securité des systèmes</Designation>
-                        <Professeur>LAZAAR</Professeur>
-                        <Salle>A8</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Securité des systèmes</Designation>
-                        <Professeur>LAZAAR</Professeur>
-                        <Salle>A8</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="Cours">
-                    <Matière>
-                        <Designation>Programmation déclarative</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mardi">
-                <Seance debut="09:00" fin="10:30" type="TP">
-                    <Matière>
-                        <Designation>Securité des systèmes</Designation>
-                        <Professeur>LAZAAR</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Introduction à J2EE</Designation>
-                        <Professeur>BEL MOKADEM</Professeur>
-                        <Salle>C6</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="TP">
-                    <Matière>
-                        <Designation>Programmation déclarative</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B14</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TP">
-                    <Matière>
-                        <Designation>Programmation déclarative</Designation>
-                        <Professeur>EL ALAMI</Professeur>
-                        <Salle>B14</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Mercredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Projet collectif et stage</Designation>
-                        <Professeur>MERGOUM</Professeur>
-                        <Salle>B2</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Projet collectif et stage</Designation>
-                        <Professeur>MERGOUM</Professeur>
-                        <Salle>B2</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Jeudi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Vision numérique</Designation>
-                        <Professeur>EZZINE</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="TP">
-                    <Matière>
-                        <Designation>Vision numérique</Designation>
-                        <Professeur>EZZINE</Professeur>
-                        <Salle>B20</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="13:30" fin="15:00" type="TP">
-                    <Matière>
-                        <Designation>Introduction à J2EE</Designation>
-                        <Professeur>BEL MOKADEM</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="15:30" fin="17:00" type="TP">
-                    <Matière>
-                        <Designation>Introduction à J2EE</Designation>
-                        <Professeur>BEL MOKADEM</Professeur>
-                        <Salle>B19</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-            <Jour nom="Vendredi">
-                <Seance debut="09:00" fin="10:30" type="Cours">
-                    <Matière>
-                        <Designation>Cloud computing et infogérance</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="11:00" fin="12:30" type="Cours">
-                    <Matière>
-                        <Designation>Cloud computing et infogérance</Designation>
-                        <Professeur>BADIR</Professeur>
-                        <Salle>B22</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="14:30" fin="16:00" type="Cours">
-                    <Matière>
-                        <Designation>Processus stochastique</Designation>
-                        <Professeur>DRISSI</Professeur>
-                        <Salle>B2</Salle>
-                    </Matière>
-                </Seance>
-                <Seance debut="16:30" fin="18:00" type="TD">
-                    <Matière>
-                        <Designation>Processus stochastique</Designation>
-                        <Professeur>DRISSI</Professeur>
-                        <Salle>B2</Salle>
-                    </Matière>
-                </Seance>
-            </Jour>
-        </Semaine>
+    <Mi_semestre numero="4" premiere_semaine="28" derniere_semaine="34">
+        <Jour nom="Lundi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Securité des systèmes</Designation>
+                    <Professeur>LAZAAR</Professeur>
+                    <Salle>A8</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Securité des systèmes</Designation>
+                    <Professeur>LAZAAR</Professeur>
+                    <Salle>A8</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="Cours">
+                <Matiere>
+                    <Designation>Programmation déclarative</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mardi">
+            <Seance debut="09:00" fin="10:30" type="TP">
+                <Matiere>
+                    <Designation>Securité des systèmes</Designation>
+                    <Professeur>LAZAAR</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Introduction à J2EE</Designation>
+                    <Professeur>BEL MOKADEM</Professeur>
+                    <Salle>C6</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="TP">
+                <Matiere>
+                    <Designation>Programmation déclarative</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B14</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TP">
+                <Matiere>
+                    <Designation>Programmation déclarative</Designation>
+                    <Professeur>EL ALAMI</Professeur>
+                    <Salle>B14</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Mercredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Projet collectif et stage</Designation>
+                    <Professeur>MERGOUM</Professeur>
+                    <Salle>B2</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Projet collectif et stage</Designation>
+                    <Professeur>MERGOUM</Professeur>
+                    <Salle>B2</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Jeudi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Vision numérique</Designation>
+                    <Professeur>EZZINE</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="TP">
+                <Matiere>
+                    <Designation>Vision numérique</Designation>
+                    <Professeur>EZZINE</Professeur>
+                    <Salle>B20</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="13:30" fin="15:00" type="TP">
+                <Matiere>
+                    <Designation>Introduction à J2EE</Designation>
+                    <Professeur>BEL MOKADEM</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="15:30" fin="17:00" type="TP">
+                <Matiere>
+                    <Designation>Introduction à J2EE</Designation>
+                    <Professeur>BEL MOKADEM</Professeur>
+                    <Salle>B19</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
+        <Jour nom="Vendredi">
+            <Seance debut="09:00" fin="10:30" type="Cours">
+                <Matiere>
+                    <Designation>Cloud computing et infogérance</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="11:00" fin="12:30" type="Cours">
+                <Matiere>
+                    <Designation>Cloud computing et infogérance</Designation>
+                    <Professeur>BADIR</Professeur>
+                    <Salle>B22</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="14:30" fin="16:00" type="Cours">
+                <Matiere>
+                    <Designation>Processus stochastique</Designation>
+                    <Professeur>DRISSI</Professeur>
+                    <Salle>B2</Salle>
+                </Matiere>
+            </Seance>
+            <Seance debut="16:30" fin="18:00" type="TD">
+                <Matiere>
+                    <Designation>Processus stochastique</Designation>
+                    <Professeur>DRISSI</Professeur>
+                    <Salle>B2</Salle>
+                </Matiere>
+            </Seance>
+        </Jour>
     </Mi_semestre>
-</Mi-semestres>
+</Mi_semestres>

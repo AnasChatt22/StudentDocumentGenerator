@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT Etudiants (Etudiant+)>
-<!ELEMENT Etudiant (Nom,Prenom,Email,Module+)>
-<!ATTLIST Etudiant id_etudiant CDATA #REQUIRED >
-<!ATTLIST Etudiant sexe CDATA #REQUIRED >
-<!ATTLIST Etudiant date_naissance CDATA #REQUIRED >
+<!ELEMENT Etudiant (Nom, Prenom, Email, Module+, MoyenneSemestre3?, MoyenneSemestre4?, MoyenneGenerale?)>
+<!ATTLIST Etudiant id_etudiant CDATA #REQUIRED>
+<!ATTLIST Etudiant sexe CDATA #REQUIRED>
+<!ATTLIST Etudiant date_naissance CDATA #REQUIRED>
 <!ELEMENT Nom (#PCDATA)>
 <!ELEMENT Prenom (#PCDATA)>
 <!ELEMENT Email (#PCDATA)>
-<!ELEMENT Module (Designation,Responsable,Semestre,Matiere+)>
-<!ATTLIST Module id_module CDATA  #REQUIRED>
+<!ELEMENT Module (Designation, Responsable, Semestre, Matiere+, Moyenne?)>
+<!ATTLIST Module id_module CDATA #REQUIRED>
 <!ELEMENT Designation (#PCDATA)>
 <!ELEMENT Responsable (#PCDATA)>
 <!ELEMENT Semestre (#PCDATA)>
-<!ELEMENT Matiere (Designation,Note)>
-<!ATTLIST Matiere id_matiere CDATA  #REQUIRED>
+<!ELEMENT Matiere (Designation, Note)>
+<!ATTLIST Matiere id_matiere CDATA #REQUIRED>
 <!ELEMENT Note (#PCDATA)>
-
-
+<!ELEMENT Moyenne (#PCDATA)>
+<!ELEMENT MoyenneSemestre3 (#PCDATA)>
+<!ELEMENT MoyenneSemestre4 (#PCDATA)>
+<!ELEMENT MoyenneGenerale (#PCDATA)>

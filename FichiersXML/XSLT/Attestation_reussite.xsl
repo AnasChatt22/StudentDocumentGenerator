@@ -4,9 +4,7 @@
     <xsl:output method="html" indent="yes"/>
     <xsl:param name="id_etudiant"/>
 
-    <!-- Match the root element -->
     <xsl:template match="/">
-        <!-- Output the HTML structure for the certificate -->
         <html>
             <head>
                 <title>Attestation de réussite</title>
@@ -78,16 +76,12 @@
                     <br/>
                     <br/>
                     <p>Le Directeur de l'Ecole Nationale des Sciences Appliquées de Tanger atteste que</p>
-                    <!-- Apply the template for the first Etudiant element -->
                     <xsl:apply-templates select="Etudiants/Etudiant[@id_etudiant = $id_etudiant]"/>
                 </center>
             </body>
         </html>
     </xsl:template>
-
-    <!-- Match the Etudiant element -->
     <xsl:template match="Etudiant">
-        <!-- Output the certificate information -->
         <p>
             <strong>
                 <xsl:if test="@sexe = 'Homme'">

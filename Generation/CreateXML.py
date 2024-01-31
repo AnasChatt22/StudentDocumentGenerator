@@ -1,11 +1,13 @@
 import random
-from xml.dom import minidom
 import xml.etree.ElementTree as ET
+from xml.dom import minidom
 
 import pandas as pd
 
+import ValidateXML
 
-def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
+
+def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2, XSD_path_ginf2):
     try:
         # Read Excel files
         read_xl_etudiant = pd.read_excel(Excel_Path_Etudiants)
@@ -103,17 +105,22 @@ def Creer_xml_GINF2(Excel_Path_Etudiants, Excel_Path_Modules, XML_Path_GINF2):
         dom = minidom.parseString(xml_string)
         prettified_xml = dom.toprettyxml(indent="    ")
 
-        # Create XML File
-        with open(XML_Path_GINF2, "w", encoding="UTF-8") as generatedXML:
-            generatedXML.write(prettified_xml)
-
-        print("Fichier GINF2.xml créé avec succès")
+        # Validate XML String
+        if ValidateXML.validate_XML_String_with_xsd(prettified_xml, XSD_path_ginf2):
+            # Create XML File
+            with open(XML_Path_GINF2, "w", encoding="UTF-8") as generatedXML:
+                generatedXML.write(prettified_xml)
+            print("Fichier GINF2.xml créé avec succès et validé")
+            return True
+        else:
+            print("Validation failed. XML is not valid according to the specified XSD schema.")
+            return False
     except Exception as ex:
         print(f"Erreur de création du fichier GINF2.xml: {ex}")
+        return False
 
 
-def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
-    semaine_element = ""
+def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi, XSD_path_emploi):
     jour_element = ""
     designation = ""
 
@@ -121,7 +128,7 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
         read_xl_emplois = pd.ExcelFile(Excel_Path_Emplois)
         read_xl_module = pd.read_excel(Excel_Path_Modules)
 
-        xml_doc = ET.Element("Mi-semestres")
+        xml_doc = ET.Element("Mi_semestres")
         # Inisialisation du compteur de feuilles excel
         j = 0
 
@@ -150,16 +157,15 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
                                 break
 
                 if not pd.isna(row['premiere_semaine']):
-                    semaine_element = ET.SubElement(mi_semestre_element, "Semaine",
-                                                    Premiere=str(int(row['premiere_semaine'])),
-                                                    Derniere=str(int(row['derniere_semaine'])))
+                    mi_semestre_element.set("premiere_semaine", str(int(row['premiere_semaine'])))
+                    mi_semestre_element.set("derniere_semaine", str(int(row['derniere_semaine'])))
 
                 if not pd.isna(row['jour']):
-                    jour_element = ET.SubElement(semaine_element, "Jour", nom=row['jour'])
+                    jour_element = ET.SubElement(mi_semestre_element, "Jour", nom=row['jour'])
 
                 seance_element = ET.SubElement(jour_element, "Seance", debut=str(row['debut'])[:5],
                                                fin=str(row['fin'])[:5], type=seance_type)
-                matiere_element = ET.SubElement(seance_element, "Matière")
+                matiere_element = ET.SubElement(seance_element, "Matiere")
                 ET.SubElement(matiere_element, "Designation").text = designation
                 ET.SubElement(matiere_element, "Professeur").text = professeur
                 ET.SubElement(matiere_element, "Salle").text = salle
@@ -169,13 +175,19 @@ def Creer_xml_Emploi(Excel_Path_Emplois, Excel_Path_Modules, XML_Path_Emploi):
         dom = minidom.parseString(xml_string)
         prettified_xml = dom.toprettyxml(indent="    ")
 
-        # Create XML File
-        with open(XML_Path_Emploi, "w", encoding="UTF-8") as generatedXML:
-            generatedXML.write(prettified_xml)
-
-        print("Fichier Emploi.xml créé avec succès")
+        # Validate XML String
+        if ValidateXML.validate_XML_String_with_xsd(prettified_xml, XSD_path_emploi):
+            # Create XML File
+            with open(XML_Path_Emploi, "w", encoding="UTF-8") as generatedXML:
+                generatedXML.write(prettified_xml)
+            print("Fichier Emploi.xml créé avec succès et validé")
+            return True
+        else:
+            print("Validation failed. Emploi.xml is not valid according to the specified XSD schema.")
+            return False
     except Exception as ex:
         print(f"Erreur de création du fichier Emploi.xml: {ex}")
+        return False
 
 
 # Example usage
@@ -186,6 +198,9 @@ emploi_xl_path = "../FichiersExcel/Emplois.xlsx"
 xml_path_GINF2 = "../FichiersXML/XML/GINF2.xml"
 xml_path_Emploi = "../FichiersXML/XML/Emploi.xml"
 
+xsd_path_GINF2 = "../FichiersXML/XSD/GINF2.xsd"
+xsd_path_Emploi = "../FichiersXML/XSD/Emploi.xsd"
+
 # test des fonctions
-# Creer_xml_GINF2(etudiant_xl_path, modules_xl_path, xml_path_GINF2)
-# Creer_xml_Emploi(emploi_xl_path, modules_xl_path, xml_path_Emploi)
+# Creer_xml_GINF2(etudiant_xl_path, modules_xl_path, xml_path_GINF2, xsd_path_GINF2)
+# Creer_xml_Emploi(emploi_xl_path, modules_xl_path, xml_path_Emploi, xsd_path_Emploi)

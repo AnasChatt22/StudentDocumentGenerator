@@ -1,44 +1,22 @@
-<?xml encoding="UTF-8"?>
-
-<!ELEMENT Mi-semestres (Mi_semestre)+>
-<!ATTLIST Mi-semestres
-    xmlns CDATA #FIXED ''>
-
-<!ELEMENT Mi_semestre (Semaine)>
+<!ELEMENT Mi_semestres (Mi_semestre+)>
+<!ELEMENT Mi_semestre (Jour+)>
 <!ATTLIST Mi_semestre
-    xmlns CDATA #FIXED ''
-    numero  #REQUIRED>
-
-<!ELEMENT Semaine (Jour)+>
-<!ATTLIST Semaine
-    xmlns CDATA #FIXED ''
-    Derniere  #REQUIRED
-    Premiere  #REQUIRED>
-
-<!ELEMENT Jour (Seance)+>
+    numero CDATA #REQUIRED
+    premiere_semaine CDATA #REQUIRED
+    derniere_semaine CDATA #REQUIRED
+>
+<!ELEMENT Jour (Seance+)>
 <!ATTLIST Jour
-    xmlns CDATA #FIXED ''
-    nom  #REQUIRED>
-
-<!ELEMENT Seance (Matière)>
+    nom CDATA #REQUIRED
+>
+<!ELEMENT Seance (Matiere+)>
 <!ATTLIST Seance
-    xmlns CDATA #FIXED ''
-    debut  #REQUIRED
-    fin  #REQUIRED
-    type  #REQUIRED>
-
-<!ELEMENT Matière (Designation,Professeur,Salle)>
-<!ATTLIST Matière
-    xmlns CDATA #FIXED ''>
-
+    debut CDATA #REQUIRED
+    fin CDATA #REQUIRED
+    type CDATA #REQUIRED
+>
+<!ELEMENT Matiere (Designation, Professeur, Salle)>
 <!ELEMENT Designation (#PCDATA)>
-<!ATTLIST Designation
-    xmlns CDATA #FIXED ''>
-
 <!ELEMENT Professeur (#PCDATA)>
-<!ATTLIST Professeur
-    xmlns CDATA #FIXED ''>
-
 <!ELEMENT Salle (#PCDATA)>
-<!ATTLIST Salle
-    xmlns CDATA #FIXED ''>
+
