@@ -6,7 +6,7 @@ from tkinter import messagebox, filedialog
 import customtkinter as ctk
 from PIL import Image
 
-import Generation.generate as gn
+import Generation.Generate as gn
 import HomePage as hp
 
 
@@ -18,6 +18,7 @@ def SignIn(root):
     # Images
     image_emploi = ctk.CTkImage(light_image=Image.open("./Images/emploi.png"), size=(88, 96))
     image_rlv_gen = ctk.CTkImage(light_image=Image.open("./Images/relv_gen.png"), size=(88, 96))
+    logo_ensat = ctk.CTkImage(light_image=Image.open("./Images/logoensat.png"), size=(110, 80))
 
     def Telecharger(button):
         file_types = [("PDF files", "*.pdf")]
@@ -30,13 +31,15 @@ def SignIn(root):
                     'page-height': '835px'
                 }
                 xml_emploi = "../FichiersXML/XML/Emploi.xml"
-                xsl_emploi = "../FichiersXML/XSLT/EmploisAll.xsl"
+                xsl_emploi = "../FichiersXML/XSLT/Emploi.xsl"
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile="EmploisGINF2")
                 if pdf_output:
                     if gn.generate_pdf_from_xslt(xml_emploi, xsl_emploi, pdf_output, options):
                         messagebox.showinfo("Info de Téléchargement", "Emploi du temps téléchargé avec succès !")
                         os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "rlv_gen":
                 options = {
                     'quiet': '',
@@ -52,7 +55,9 @@ def SignIn(root):
                     if gn.generate_pdf_from_xslt(xml_rlv_gen, xsl_rlv_gen, pdf_output, options):
                         messagebox.showinfo("Info de Téléchargement",
                                             "Relevé général de notes téléchargé avec succès !")
-                    os.system(f'start {pdf_output}')
+                        os.system(f'start {pdf_output}')
+                else:
+                    messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
 
     def sign_in():
         if len(id_etd_input.get()) == 0:
@@ -90,9 +95,13 @@ def SignIn(root):
     frameButtons_signIn = ctk.CTkFrame(master=frameSignIn, width=590, height=590, fg_color="#f8f8f8")
     frameButtons_signIn.place(x=305, y=300, anchor=tk.CENTER)
 
+    # Logo ensat
+    label_logo_signIn = ctk.CTkLabel(master=frameFormSignIn, text="", image=logo_ensat)
+    label_logo_signIn.place(x=480, y=1)
+
     # Sign In Heading
     heading_signIn = ctk.CTkLabel(frameFormSignIn, text="Information étudiant", font=HeadingFont, text_color="#000")
-    heading_signIn.place(x=300, y=120, anchor=tk.CENTER)
+    heading_signIn.place(x=300, y=150, anchor=tk.CENTER)
 
     # Id etudiant Input
     id_etd_input = ctk.CTkEntry(frameFormSignIn, width=250, height=40, font=InputFont,
@@ -103,7 +112,7 @@ def SignIn(root):
     SearchButton = ctk.CTkButton(frameFormSignIn, text="Chercher", font=InputFont, width=55, height=35,
                                  text_color="#fff",
                                  hover_color="#f4a024", fg_color="#294a70", cursor="hand2", command=sign_in)
-    SearchButton.place(x=300, y=320, anchor=tk.CENTER)
+    SearchButton.place(x=300, y=300, anchor=tk.CENTER)
 
     # Labels
     Labelemploi = ctk.CTkLabel(master=frameButtons_signIn, font=ButtonsFont, width=380, height=230,

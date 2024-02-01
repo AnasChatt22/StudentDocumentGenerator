@@ -1,0 +1,22 @@
+<!ELEMENT Mi_semestres (Mi_semestre+)>
+<!ELEMENT Mi_semestre (Jour+)>
+<!ATTLIST Mi_semestre
+    numero CDATA #REQUIRED
+    premiere_semaine CDATA #REQUIRED
+    derniere_semaine CDATA #REQUIRED
+>
+<!ELEMENT Jour (Seance+)>
+<!ATTLIST Jour
+    nom CDATA #REQUIRED
+>
+<!ELEMENT Seance (Matiere+)>
+<!ATTLIST Seance
+    debut CDATA #REQUIRED
+    fin CDATA #REQUIRED
+    type CDATA #REQUIRED
+>
+<!ELEMENT Matiere (Designation, Professeur, Salle)>
+<!ELEMENT Designation (#PCDATA)>
+<!ELEMENT Professeur (#PCDATA)>
+<!ELEMENT Salle (#PCDATA)>
+

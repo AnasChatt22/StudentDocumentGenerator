@@ -5,7 +5,7 @@ from tkinter import filedialog, messagebox
 import customtkinter as ctk
 from PIL import Image
 
-import Generation.generate as gn
+import Generation.Generate as gn
 import SignIn as si
 
 
@@ -24,17 +24,21 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile=f"Relevé_perso_{prenom}_{nom}")
                 if pdf_output:
-                    if gn.generate_pdf_from_xquery_foo(xml_GINF2, xquery_rlv_note, pdf_output, id_etudiant):
+                    if gn.generate_pdf_from_xquery(xml_GINF2, xquery_rlv_note, pdf_output, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Relevé personnel téléchargé !")
                         os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "att_sco":
-                xquery_att_sco = "../FichiersXML/FO/attestation_pdf.xquery"
+                xquery_att_sco = "../FichiersXML/FO/attestation_sco_pdf.xquery"
                 pdf_output = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=file_types,
                                                           initialfile=f"Attestation_scolarité_{prenom}_{nom}")
                 if pdf_output:
-                    if gn.generate_pdf_from_xquery_foo(xml_GINF2, xquery_att_sco, pdf_output, id_etudiant):
+                    if gn.generate_pdf_from_xquery(xml_GINF2, xquery_att_sco, pdf_output, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Attestation de scolarité téléchargé !")
                         os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "att_reuss":
                 options = {
                     'quiet': '',
@@ -50,6 +54,8 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                         if gn.generate_pdf_from_xslt(xml_GINF2, xsl_att_reuss, pdf_output, options, id_etudiant):
                             messagebox.showinfo("Info de Téléchargement", "Attestation de réussite téléchargée !")
                             os.system(f'start {pdf_output}')
+                        else:
+                            messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
             case "carte_etd":
                 options = {
                     'quiet': '',
@@ -61,7 +67,9 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
                 if pdf_output:
                     if gn.generate_pdf_from_xslt(xml_GINF2, xsl_carte_etd, pdf_output, options, id_etudiant):
                         messagebox.showinfo("Info de Téléchargement", "Carte d'étudiant téléchargée !")
-                    os.system(f'start {pdf_output}')
+                        os.system(f'start {pdf_output}')
+                    else:
+                        messagebox.showerror("Info de Téléchargement", "Erreur de téléchargement")
 
     # Fonts
     ButtonsFont = ctk.CTkFont(family="Microsoft YaHei UI Light", size=16, weight="bold")
@@ -77,7 +85,7 @@ def HomePage(root, nom, prenom, moyenneGen, id_etudiant):
 
     # Logout button
     image_logout = ctk.CTkImage(light_image=Image.open("./Images/logout.png"), size=(33, 36))
-    image_logout_button = ctk.CTkButton(master=frameHome, font=ButtonsFont, width=40, height=40,text="",
+    image_logout_button = ctk.CTkButton(master=frameHome, font=ButtonsFont, width=40, height=40, text="",
                                         hover_color="#f4a024", fg_color="#294a70", cursor="hand2",
                                         bg_color="transparent", corner_radius=20, image=image_logout,
                                         command=logout)
