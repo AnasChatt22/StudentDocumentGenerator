@@ -4,36 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="still fixing">
-      <change afterPath="$PROJECT_DIR$/FichiersHTML/Emploi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FichiersXML/XQuery/attestation_sco_html.xquery" afterDir="false" />
+    <list default="true" id="78d72717-13c4-4af7-b10e-b6f26fdb5174" name="Changes" comment="added video">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/HomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/SignIn.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/SignIn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersHTML/Attestation_reussite.html" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersHTML/Attestation_reussite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersHTML/Attestation_scolarite.html" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersHTML/Attestation_scolarite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersHTML/CarteEtd.html" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersHTML/CarteEtd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersHTML/Emplois.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersHTML/Releve_perso.html" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersHTML/Releve_perso.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersPDF/Attestation_scolarite.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersPDF/Attestation_scolarite.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersPDF/Emplois.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersPDF/Emploi.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersPDF/Releve_general.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersPDF/Releve_general.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersPDF/Releve_perso.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersPDF/Releve_perso.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/DTD/Emploi.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/DTD/Emploi.dtd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/DTD/GINF2.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/DTD/GINF2.dtd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/FO/attestation_pdf.xquery" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/FO/attestation_sco_pdf.xquery" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/FO/releve_personnel_pdf.xquery" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/FO/releve_personnel_pdf.xquery" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XML/Emploi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XML/Emploi.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XML/GINF2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XSD/Emploi.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XSD/Emploi.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XSD/GINF2.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XSD/GINF2.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XSLT/Attestation_reussite.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XSLT/Attestation_reussite.xsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/XSLT/Emplois.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XSLT/Emploi.xsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/Xquery/attestation.xquery" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FichiersXML/Xquery/releve_personnel.xquery" beforeDir="false" afterPath="$PROJECT_DIR$/FichiersXML/XQuery/releve_personnel.xquery" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generation/CreateXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generation/CreateXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generation/Generate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generation/Generate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generation/ValidateXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generation/ValidateXML.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Video Représentative/Video.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/Rapport Final/Video.mp4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,7 +280,8 @@
       <workItem from="1706540396751" duration="1552000" />
       <workItem from="1706698621256" duration="10769000" />
       <workItem from="1706709861918" duration="320000" />
-      <workItem from="1706710189653" duration="15543000" />
+      <workItem from="1706710189653" duration="16378000" />
+      <workItem from="1706779450858" duration="1917000" />
     </task>
     <task id="LOCAL-00001" summary="commit test">
       <option name="closed" value="true" />
@@ -413,7 +387,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706109217635</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Final version">
+      <option name="closed" value="true" />
+      <created>1706730067174</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1706730067174</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added video">
+      <option name="closed" value="true" />
+      <created>1706730646697</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706730646697</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +456,9 @@
     <MESSAGE value="added tkinter app 2" />
     <MESSAGE value="some fixes and added emploi validation with xsd" />
     <MESSAGE value="still fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="still fixing" />
+    <MESSAGE value="Final version" />
+    <MESSAGE value="added video" />
+    <option name="LAST_COMMIT_MESSAGE" value="added video" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
